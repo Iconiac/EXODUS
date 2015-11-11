@@ -1,0 +1,21 @@
+Moin Leute,
+
+Anmerkungen zur Benutzungen dieser Unity Datei:
+
+für Yves, Daniel und Nico:
+1. im Ordner "Scenes" die richtige Szene auswählen. 
+2. Bitte stets kontrollieren, dass ihr in eurer Szene seid.
+3. Keine weiteren Szenen anlegen.
+4. Die Grundordnerstruktur nicht verändern, um die anderen nicht zu verwirren.
+5. NICHT in der Szene eines anderen etwas verändern!!!
+
+für alle anderen:
+Die Ordner "CITY", "MOUNTAIN" und "HAVEN" haben Unterordner. Ladet eure Assets bitte dort hinein.
+Bei Models bitte drauf achten, dass es die Ordner "Models", "Animation" und "Materials" gibt.
+Unity erstellt automatisch einen Ordner namens Materials mit eurer FBX Datei. Also denkt dran die Materials dann in den "Materials" Ordner zu legen, sonst gibt es am Ende 100 Materials Ordner.
+Es ist egal in welcher Szene ihr euch befindet, da der Projektordner für alle Szenen gleich ist.
+Bitte fasst keine Szene an und ändert nicht das Layout.
+
+Und am Ende: denkt dran die Änderungen wieder zu Pushen.
+
+Bis dann! :)

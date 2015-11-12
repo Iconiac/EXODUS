@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SceneLoader : MonoBehaviour {
+public class SceneLoader : MonoBehaviour 
+{
 
-	// Use this for initialization
-	void Start () 
-	{
-		Invoke("LoadMain", 3);
-	}
+	[SerializeField] string sceneToLoad;
+	[SerializeField] GameObject player;
 
-	void LoadMain()
+	void OnTriggerEnter(Collider col)
 	{
-		Application.LoadLevel("Exodus_Alpha");
+		if (col.gameObject == player)
+		{
+			Application.LoadLevel(sceneToLoad);
+		}
 	}
 }

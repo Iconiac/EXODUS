@@ -3,7 +3,7 @@ using System.Collections;
 
 public class QuitGame : MonoBehaviour 
 {
-	void CloseGame()
+	void Update()
 	{
 		if (Input.GetKey (KeyCode.Escape))
 		{

@@ -3,11 +3,23 @@ using System.Collections;
 
 public class LevelProgression : MonoBehaviour 
 {
-	void OnCollisionEnter(Collision col)
+	[SerializeField] string game;
+
+
+	void Update()
 	{
-		if (col.gameObject.CompareTag ("Player"))
+		if (Input.GetButton ("Interact"))
 		{
-			Application.LoadLevel("Exodus_Scene2");
+			Application.LoadLevel (game);
 		}
 	}
+
+	/*void ChangeScene()
+	{
+		if (Input.GetButton ("Interact"))
+		{
+			Application.LoadLevel ("First");
+		}
+	}*/
+	            
 }

@@ -4,7 +4,12 @@ using System.Collections;
 
 public class DialogueController : MonoBehaviour 
 {
-	
+	public string beforeQuest;
+	public string questGoodEnding;
+	public string duringQuest;
+	public string storyText;
+	public bool questCompleted;
+	public bool questActive;
 
 	private Text displayQuest;
 

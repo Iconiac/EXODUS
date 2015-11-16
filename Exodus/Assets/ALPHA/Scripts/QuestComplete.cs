@@ -5,8 +5,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 {
 	public class QuestComplete : MonoBehaviour
 	{
-		public GameObject parent;
+		[SerializeField] GameObject parent;
 		[Range(0.0f, 5.0f)]public float killDistance;
+
+		private ParentMove _parent;
+
+		void Start()
+		{
+			_parent = parent.GetComponent<ParentMove>();
+		}
 
 		public void QuestEvent()
 		{
@@ -31,7 +38,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
 				if (parent != null)
 				{
-				parent.GetComponent<ParentQuestMove>().target = gameObject.transform.position;
+					_parent.target = gameObject.transform.position;
 				}
 			}
 		}

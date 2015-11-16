@@ -17,7 +17,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			agent = GetComponentInChildren<NavMeshAgent>();
 			character = GetComponent<ThirdPersonCharacter>();
-			target = goal.transform.position;
+
+			if (gameObject.tag == "Parent")
+			{
+				target = goal.transform.position;
+			}
+
+			else
+			{
+				target = this.transform.position;
+			}
+
 			agent.updateRotation = false;
 			agent.updatePosition = true;
 		}
@@ -26,6 +36,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			agent.SetDestination(target);
 			character.Move(agent.desiredVelocity, false, false);
+
 			if (target == transform.position)
 			{
 				character.Move(Vector3.zero, false, false);

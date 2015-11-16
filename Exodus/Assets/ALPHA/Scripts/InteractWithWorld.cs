@@ -7,15 +7,17 @@ public class InteractWithWorld : MonoBehaviour
 
 {
 
-	public float interactDistance;
+	[SerializeField] float InteractDistance;
+
 	private float _currentshortestDistance;
 	private GameObject _intTarget;
-	
-	
+
 	void FixedUpdate()
 	{
 		_intTarget = null;
-		_currentshortestDistance = interactDistance;
+		_currentshortestDistance = InteractDistance;
+
+			Debug.Log (_intTarget);
 		
 		GameObject[] PotentialTargets = GameObject.FindGameObjectsWithTag("Target");
 		
@@ -23,6 +25,7 @@ public class InteractWithWorld : MonoBehaviour
 		{
 			
 			float distance = Vector3.Distance (gameObject.transform.position, PotentialTargets [i].transform.position);
+
 			if (distance <= _currentshortestDistance) 
 			{
 				_currentshortestDistance = distance;
@@ -35,8 +38,6 @@ public class InteractWithWorld : MonoBehaviour
 			if (Input.GetButtonDown ("Interact"))
 			{
 				StartCoroutine("Questing");
-				//_intTarget.GetComponent<DialogueController>().ShowDialogue();
-				//_intTarget.GetComponent<QuestController>().QuestEvent();
 			}
 		}
 	}

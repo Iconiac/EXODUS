@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SeePlayer : MonoBehaviour 
 {
@@ -18,15 +19,21 @@ public class SeePlayer : MonoBehaviour
 	public Transform[] waypoints;
 	private int cur = 0;
 	public float speed = 0.3f;
+	public string Discovery;
+	private Text _discovery;
 	
 	void Awake()
 	{
 		player = GameObject.FindWithTag("Player");
 		startRot = transform.rotation;
+		_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
 	}
 
 	void FixedUpdate()
 	{
+
+		Debug.Log (playerInSight);
+
 		if (playerInSight == false && sisterInSight == false)
 		{
 		if (transform.position != waypoints [cur].position) 
@@ -61,12 +68,8 @@ public class SeePlayer : MonoBehaviour
 					{
 						if(hit.collider.gameObject == player)
 						{
+							LoseGame();
 							playerInSight = true;
-
-						if(sisterInSight == false)
-						{
-							transform.LookAt(playerHead.transform.position);
-						}
 						}
 					}
 				}
@@ -83,30 +86,24 @@ public class SeePlayer : MonoBehaviour
 				if(Physics.Raycast(eyes.transform.position, direction.normalized, out hit, viewDistance))
 				{
 					if(hit.collider.gameObject == sister)
-					{
+					{	
+						LoseGame();
 						sisterInSight = true;
-						if (playerInSight == false)
-						{
-						transform.LookAt(sisterHead.transform.position);
-						}
 					}
 				}
 			}
 		}
 	}
 
-		void OnTriggerExit (Collider other)
-		{
-			if(other.gameObject == player)
-			{
-				playerInSight = false;
-				transform.rotation = startRot;
-			}
 
-			if(other.gameObject == sister)
-			{
-				sisterInSight = false;
-				transform.rotation = startRot;
-			}
-		}
+	void LoseGame()
+	{
+		_discovery.text = "" + Discovery;
+		Invoke ("Restart", 4f);
+	}
+
+	void Restart()
+	{
+		Application.LoadLevel("First");
+	}
 }

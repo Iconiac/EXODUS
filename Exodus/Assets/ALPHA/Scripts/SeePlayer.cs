@@ -1,12 +1,13 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
+namespace UnityStandardAssets.Characters.ThirdPerson
+{
 public class SeePlayer : MonoBehaviour 
 {
 	public float fieldOfViewAngle = 110f;           
 	public bool playerInSight;
-	private bool sisterInSight;
 	public GameObject sister;
 	public GameObject sisterHead;
 	private GameObject player;                      
@@ -14,7 +15,6 @@ public class SeePlayer : MonoBehaviour
 	public GameObject eyes;
 	public float viewDistance;
 	public GameObject playerHead;
-	private Quaternion startRot;
 	public bool rot;
 	public Transform[] waypoints;
 	private int cur = 0;
@@ -25,16 +25,13 @@ public class SeePlayer : MonoBehaviour
 	void Awake()
 	{
 		player = GameObject.FindWithTag("Player");
-		startRot = transform.rotation;
 		_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
 	}
 
 	void FixedUpdate()
 	{
 
-		Debug.Log (playerInSight);
-
-		if (playerInSight == false && sisterInSight == false)
+		if (playerInSight == false)
 		{
 		if (transform.position != waypoints [cur].position) 
 		{
@@ -57,13 +54,11 @@ public class SeePlayer : MonoBehaviour
 
 			if(other.gameObject == player)
 			{
-				Debug.Log("Is in Collider");
 				Vector3 direction = playerHead.transform.position - eyes.transform.position;
 				float angle = Vector3.Angle(direction, eyes.transform.forward);
 
 				if(angle < fieldOfViewAngle * 0.5f)
 				{
-				Debug.DrawLine(eyes.transform.position, hit.point);
 					if(Physics.Raycast(eyes.transform.position, direction.normalized, out hit, viewDistance))
 					{
 						if(hit.collider.gameObject == player)
@@ -82,13 +77,12 @@ public class SeePlayer : MonoBehaviour
 			
 			if(angle < fieldOfViewAngle * 0.5f)
 			{
-				Debug.DrawLine(eyes.transform.position, hit.point);
 				if(Physics.Raycast(eyes.transform.position, direction.normalized, out hit, viewDistance))
 				{
 					if(hit.collider.gameObject == sister)
 					{	
 						LoseGame();
-						sisterInSight = true;
+						playerInSight = true;
 					}
 				}
 			}
@@ -99,6 +93,10 @@ public class SeePlayer : MonoBehaviour
 	void LoseGame()
 	{
 		_discovery.text = "" + Discovery;
+		player.GetComponent<ThirdPersonUserControl>().enabled = false;
+			player.GetComponent<ThirdPersonCharacter>().m_MoveSpeedMultiplier = 0f;
+			player.GetComponent<ThirdPersonCharacter>().m_AnimSpeedMultiplier = 0f;
+		sister.GetComponent<SisterMovement>().target = sister.transform.position;
 		Invoke ("Restart", 4f);
 	}
 
@@ -106,4 +104,5 @@ public class SeePlayer : MonoBehaviour
 	{
 		Application.LoadLevel("First");
 	}
+}
 }

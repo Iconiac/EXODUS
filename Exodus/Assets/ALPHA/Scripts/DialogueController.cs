@@ -13,7 +13,7 @@ public class DialogueController : MonoBehaviour
 
 	private Text displayQuest;
 
-	void Start()
+	void Awake()
 	{
 		displayQuest = GameObject.Find ("InGameText").GetComponent<Text> ();
 		displayQuest.text = "Los jetzt, raus hier! Hier lang!";

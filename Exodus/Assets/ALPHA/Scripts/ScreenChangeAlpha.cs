@@ -1,83 +1,69 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
 	public class ScreenChangeAlpha : MonoBehaviour 
 	{
-		public GameObject startScreenBorderRight;
-		public GameObject startScreenBorderLeft;
-		public GameObject screen2BorderRight;
-		public GameObject screen2BorderLeft;
-		public GameObject spawnScreen2Right;
-		public GameObject spawnScreen3Right;
-		public GameObject spawnScreen3Left;
-		public GameObject spawnScreen2Left;
 
-		public GameObject camStart;
-		public GameObject camScreen2;
-		public GameObject camScreen3Dad;
-		public GameObject camScreen3Mom;
+		[SerializeField] GameObject PositionToSpawnAt;
+		[SerializeField] GameObject CameraToActivate;
+		[SerializeField] GameObject CameraToDeactivate;
+		[SerializeField] GameObject[] EnemiesToActivate;
+		[SerializeField] GameObject[] OptionalThingsToActivate;
+		[SerializeField] GameObject[] OptionalThingsToDeactivate;
+		[SerializeField] string TextToShow;
 
-		public GameObject sister;
-		public GameObject carEnemy;
-		public GameObject houseEnemy;
+		private GameObject _sister;
+		private GameObject _player;
+		private SisterMovement _sisterTarget;
+		private Text _inGameMessage;
 
-		private bool dadChosen;
-		private bool momChosen;
+		void Awake()
+		{
+			_player = GameObject.Find("Player");
+			_sister = GameObject.Find ("LilSister");
+			_inGameMessage = GameObject.Find ("InGameText").GetComponent<Text> ();
+			_sisterTarget = _sister.GetComponent<SisterMovement>();
+
+		}
 			
 		void OnCollisionEnter (Collision col)
 		{
-			if (col.gameObject == startScreenBorderRight)
+			if (col.gameObject.tag == "Player")
 			{
-				camStart.SetActive(false);
-				camScreen2.SetActive(true);
-				dadChosen = true;
-				transform.position = new Vector3 (spawnScreen2Left.transform.position.x, transform.position.y, spawnScreen2Left.transform.position.z);
-				sister.transform.position = new Vector3 (spawnScreen2Left.transform.position.x, transform.position.y, spawnScreen2Left.transform.position.z - 2);
-				sister.GetComponent<SisterMovement>().target = sister.transform.position;
-				GetComponent<DialogueController>().StoryText();
-				carEnemy.GetComponent<SeePlayer>().enabled = true;
-				houseEnemy.GetComponent<SeePlayer>().enabled = true;
+				Vector3 _sisterPosition = new Vector3 (PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z - 2);
+				CameraToActivate.SetActive(true);
+				_player.transform.position = PositionToSpawnAt.transform.position;
+				_sister.GetComponent<NavMeshAgent>().Warp(_sisterPosition);
+				_sisterTarget.target = _sister.transform.position;
 
-			}
-
-			if (col.gameObject == startScreenBorderLeft)
-			{
-				camStart.SetActive(false);
-				camScreen2.SetActive(true);
-				momChosen = true;
-				transform.position = new Vector3 (spawnScreen2Right.transform.position.x, transform.position.y, spawnScreen2Right.transform.position.z);
-				sister.transform.position = new Vector3 (spawnScreen2Right.transform.position.x, transform.position.y, spawnScreen2Right.transform.position.z - 2);
-				sister.GetComponent<SisterMovement>().target = sister.transform.position;
-				GetComponent<DialogueController>().StoryText();
-				carEnemy.GetComponent<SeePlayer>().enabled = true;
-				houseEnemy.GetComponent<SeePlayer>().enabled = true;
-			}
-
-			if (dadChosen == true)
-			{
-				if (col.gameObject == screen2BorderRight)
+				if (TextToShow != "")
 				{
-					camScreen2.SetActive(false);
-					camScreen3Dad.SetActive(true);
-					transform.position = new Vector3 (spawnScreen3Left.transform.position.x, transform.position.y, spawnScreen3Left.transform.position.z);
-					sister.transform.position = new Vector3 (spawnScreen3Left.transform.position.x, transform.position.y, spawnScreen3Left.transform.position.z);
-					sister.GetComponent<SisterMovement>().target = sister.transform.position;
+					_inGameMessage.text = "" + TextToShow;
 				}
+
+				foreach (GameObject enemy in EnemiesToActivate)
+				{
+					enemy.SetActive (true);
+				}
+
+				foreach (GameObject stuff in OptionalThingsToActivate)
+				{
+					stuff.SetActive(true);
+				}
+
+				foreach (GameObject stuff in OptionalThingsToDeactivate)
+				{
+					stuff.SetActive(false);
+				}
+
+				CameraToDeactivate.SetActive(false);
+
 			}
 
-			if (momChosen == true)
-			{
-				if (col.gameObject == screen2BorderLeft)
-				{
-					camScreen2.SetActive(false);
-					camScreen3Mom.SetActive(true);
-					transform.position = new Vector3 (spawnScreen3Right.transform.position.x, transform.position.y, spawnScreen3Right.transform.position.z);
-					sister.transform.position = new Vector3 (spawnScreen3Right.transform.position.x, transform.position.y, spawnScreen3Right.transform.position.z);
-					sister.GetComponent<SisterMovement>().target = sister.transform.position;
-				}
-			}
+
 		}
 
 	}

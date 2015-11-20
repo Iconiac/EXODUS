@@ -10,6 +10,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		public void QuestEvent()
 		{
+			parent = GameObject.Find ("Parent");
 			gameObject.GetComponent<BoxCollider>().isTrigger = true;
 			parent.GetComponent<Rigidbody>().isKinematic = false;
 		}

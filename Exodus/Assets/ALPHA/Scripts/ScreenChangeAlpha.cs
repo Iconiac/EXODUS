@@ -14,6 +14,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] GameObject[] OptionalThingsToActivate;
 		[SerializeField] GameObject[] OptionalThingsToDeactivate;
 		[SerializeField] string TextToShow;
+		[SerializeField] string TextForTooMuchDistance;
+		[SerializeField][Range(0.0f, 35.0f)] float ChangeDistance;
 
 		private GameObject _sister;
 		private GameObject _player;
@@ -33,34 +35,42 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			if (col.gameObject.tag == "Player")
 			{
-				Vector3 _sisterPosition = new Vector3 (PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z - 2);
-				CameraToActivate.SetActive(true);
-				_player.transform.position = PositionToSpawnAt.transform.position;
-				_sister.GetComponent<NavMeshAgent>().Warp(_sisterPosition);
-				_sisterTarget.target = _sister.transform.position;
-
-				if (TextToShow != "")
+				if (Vector3.Distance(_sister.transform.position, this.transform.position) <= ChangeDistance)
 				{
-					_inGameMessage.text = "" + TextToShow;
+					Vector3 _sisterPosition = new Vector3 (PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z - 2);
+					CameraToActivate.SetActive(true);
+					_player.transform.position = PositionToSpawnAt.transform.position;
+					_sister.GetComponent<NavMeshAgent>().Warp(_sisterPosition);
+					_sisterTarget.target = _sister.transform.position;
+					
+					if (TextToShow != "")
+					{
+						_inGameMessage.text = "" + TextToShow;
+					}
+					
+					foreach (GameObject enemy in EnemiesToActivate)
+					{
+						enemy.SetActive (true);
+					}
+					
+					foreach (GameObject stuff in OptionalThingsToActivate)
+					{
+						stuff.SetActive(true);
+					}
+					
+					foreach (GameObject stuff in OptionalThingsToDeactivate)
+					{
+						stuff.SetActive(false);
+					}
+					
+					CameraToDeactivate.SetActive(false);
 				}
 
-				foreach (GameObject enemy in EnemiesToActivate)
-				{
-					enemy.SetActive (true);
-				}
+			}
 
-				foreach (GameObject stuff in OptionalThingsToActivate)
-				{
-					stuff.SetActive(true);
-				}
-
-				foreach (GameObject stuff in OptionalThingsToDeactivate)
-				{
-					stuff.SetActive(false);
-				}
-
-				CameraToDeactivate.SetActive(false);
-
+			if (Vector3.Distance(_sister.transform.position, this.transform.position) >= ChangeDistance)
+			{
+				_inGameMessage.text = "" + TextForTooMuchDistance;
 			}
 
 

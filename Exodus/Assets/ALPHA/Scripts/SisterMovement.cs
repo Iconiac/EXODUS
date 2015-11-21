@@ -7,12 +7,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	[RequireComponent(typeof (ThirdPersonCharacter))]
 	public class SisterMovement : MonoBehaviour 
 	{
+		[SerializeField] GameObject GoTerrain;
+		[SerializeField] GameObject Port;
+
 		public NavMeshAgent agent { get; private set; }
 		public ThirdPersonCharacter character { get; private set; }
 		public Vector3 target;
-		public GameObject goTerrain;
-		public GameObject Port;
-	
+
+		private Collider _portCollider;
+		private Collider _terrainCollider;
+
 		private void Start()
 		{
 			agent = GetComponentInChildren<NavMeshAgent>();
@@ -20,6 +24,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			target = this.transform.position;
 			agent.updateRotation = false;
 			agent.updatePosition = true;
+			_portCollider = Port.GetComponent<Collider>();
+			_terrainCollider = GoTerrain.GetComponent<Collider>();
 		}
 	
 		private void Update()
@@ -37,12 +43,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				RaycastHit hit;
 				
-				if (goTerrain.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity))
+				if (_terrainCollider.Raycast(ray, out hit, Mathf.Infinity))
 				{
 					target = hit.point;
 				}
 				
-				if (Port.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity))
+				if (_portCollider.Raycast(ray, out hit, Mathf.Infinity))
 				{
 					target = hit.point;
 				}

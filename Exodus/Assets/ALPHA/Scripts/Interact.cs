@@ -5,7 +5,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 {
 public class Interact : MonoBehaviour 
 {
-	public float interactDistance;
+	[SerializeField] float InteractDistance;
 
 	private float _currentshortestDistance;
 	private GameObject _intTarget;
@@ -21,7 +21,7 @@ public class Interact : MonoBehaviour
 	void FixedUpdate()
 	{
 		_intTarget = null;
-		_currentshortestDistance = interactDistance;
+		_currentshortestDistance = InteractDistance;
 		
 		GameObject[] PotentialTargets = GameObject.FindGameObjectsWithTag("NPC");
 		

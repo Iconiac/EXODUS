@@ -9,8 +9,8 @@ public class DecisionCity : MonoBehaviour
 	[SerializeField] GameObject Mom;
 	[SerializeField] GameObject Dad;
 
-	private bool dadChosen;
-	private bool momChosen;
+	private bool _dadChosen;
+	private bool _momChosen;
 
 	void OnCollisionEnter (Collision col)
 	{
@@ -18,24 +18,24 @@ public class DecisionCity : MonoBehaviour
 		{
 			if (col.gameObject.tag == "MomWay")
 			{
-				momChosen = true;
+				_momChosen = true;
 			}
 			
 			if (col.gameObject.tag == "DadWay")
 			{
-				dadChosen = true;
+				_dadChosen = true;
 			}	
 		}
 		
 		if (col.gameObject.name == "Screen2Border")
 		{
-			if (momChosen == true)
+			if (_momChosen == true)
 			{
 				Mom.SetActive(true);
 				Mom.GetComponent<QuestController>().questTarget.SetActive(true);
 			}
 			
-			if (dadChosen == true)
+			if (_dadChosen == true)
 			{
 				Dad.SetActive(true);
 				Dad.GetComponent<QuestController>().questTarget.SetActive(true);

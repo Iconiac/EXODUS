@@ -4,10 +4,9 @@ using System.Collections;
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
 public class InteractWithWorld : MonoBehaviour 
-
 {
+	[SerializeField] float InteractDistance;
 
-	public float interactDistance;
 	private float _currentshortestDistance;
 	private GameObject _intTarget;
 	
@@ -15,7 +14,7 @@ public class InteractWithWorld : MonoBehaviour
 	void FixedUpdate()
 	{
 		_intTarget = null;
-		_currentshortestDistance = interactDistance;
+		_currentshortestDistance = InteractDistance;
 		
 		GameObject[] PotentialTargets = GameObject.FindGameObjectsWithTag("Target");
 		

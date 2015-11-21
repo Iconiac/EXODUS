@@ -22,6 +22,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		private GameObject _cameraToDeactivate;
 		private SisterMovement _sisterTarget;
 		private Text _inGameMessage;
+		private NavMeshAgent _agent;
 
 		void Awake()
 		{
@@ -30,6 +31,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			_inGameMessage = GameObject.Find ("InGameText").GetComponent<Text> ();
 			_sisterTarget = _sister.GetComponent<SisterMovement>();
 			_cameraToDeactivate = transform.parent.gameObject;
+			_agent = _sister.GetComponent<NavMeshAgent>();
 
 		}
 			
@@ -45,7 +47,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 					if (ShouldSisterStay == false)
 					{
-						_sister.GetComponent<NavMeshAgent>().Warp(_sisterPosition);
+						_agent.Warp(_sisterPosition);
 						_sisterTarget.target = _sister.transform.position;
 					}
 					if (TextToShow != "")

@@ -11,7 +11,12 @@ public class SceneLoader : MonoBehaviour
 	{
 		if (col.gameObject == Player)
 		{
-			Application.LoadLevel(SceneToLoad);
+			Invoke ("LoadEnd", 8f);
 		}
+	}
+
+	void LoadEnd()
+	{
+		Application.LoadLevel(SceneToLoad);
 	}
 }

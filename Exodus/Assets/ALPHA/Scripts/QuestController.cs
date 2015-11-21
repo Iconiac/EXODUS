@@ -4,37 +4,39 @@ using System.Collections;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
-public class QuestController : MonoBehaviour 
-{
-	public GameObject questGiver;
-	public GameObject questTarget;
-	public GameObject questGoal;
-
-	public void QuestEvent()
+	public class QuestController : MonoBehaviour 
 	{
-		if (questGiver != null && GetComponent<DialogueController>().QuestActive == true)
+		public GameObject questGiver;
+		public GameObject questTarget;
+		public GameObject questGoal;
+		public bool QuestCompleted;
+		public bool QuestActive;
+	
+		public void QuestEvent()
 		{
-			questGiver.GetComponent<DialogueController>().QuestCompleted = true;
-			GetComponent<DialogueController>().QuestCompleted = true;
-		}
-
-		if (questTarget != null)
-		{  
-			if (GetComponent<DialogueController>().QuestCompleted == false)
+			if (questGiver != null && QuestActive == true)
 			{
-				GetComponent<DialogueController>().QuestActive = true;
-				questTarget.GetComponent<DialogueController>().QuestActive = true;
+				questGiver.GetComponent<QuestController>().QuestCompleted = true;
+				QuestCompleted = true;
 			}
-
-			if (GetComponent<DialogueController>().QuestActive == true)
-			{
-				if (GetComponent<DialogueController>().QuestCompleted == true)
+	
+			if (questTarget != null)
+			{  
+				if (QuestCompleted == false)
 				{
-					questGoal.GetComponent<QuestComplete>().QuestEvent();
+					QuestActive = true;
+					questTarget.GetComponent<QuestController>().QuestActive = true;
+				}
+	
+				if (QuestActive == true)
+				{
+					if (QuestCompleted == true)
+					{
+						questGoal.GetComponent<QuestComplete>().QuestEvent();
+					}
 				}
 			}
 		}
+	
 	}
-
-}
 }

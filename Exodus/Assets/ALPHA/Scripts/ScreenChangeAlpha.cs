@@ -37,7 +37,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			if (col.gameObject.tag == "Player")
 			{
-				if (Vector3.Distance(_sister.transform.position, this.transform.position) <= ChangeDistance)
+				if (Vector3.Distance(_sister.transform.position, _player.transform.position) <= ChangeDistance)
 				{
 					Vector3 _sisterPosition = new Vector3 (PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z - 2);
 					CameraToActivate.SetActive(true);
@@ -71,7 +71,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 					_cameraToDeactivate.SetActive(false);
 				}
 
-				else if (Vector3.Distance(_sister.transform.position, this.transform.position) >= ChangeDistance)
+				else if (Vector3.Distance(_sister.transform.position, _player.transform.position) >= ChangeDistance)
 				{
 					_inGameMessage.text = "" + TextForTooMuchDistance;
 				}

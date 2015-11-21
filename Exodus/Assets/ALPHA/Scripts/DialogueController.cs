@@ -4,52 +4,52 @@ using System.Collections;
 
 public class DialogueController : MonoBehaviour 
 {
-	public string beforeQuest;
-	public string questGoodEnding;
-	public string duringQuest;
-	public string storyText;
-	public bool questCompleted;
-	public bool questActive;
+	[SerializeField] string BeforeQuest;
+	[SerializeField] string QuestEnding;
+	[SerializeField] string StoryText;
+	[SerializeField] string UniquePlayerText;
 
-	private Text displayQuest;
+	public string DuringQuest;
+	public bool QuestCompleted;
+	public bool QuestActive;
+
+	private Text _displayQuest;
 
 	void Awake()
 	{
-		displayQuest = GameObject.Find ("InGameText").GetComponent<Text> ();
-		displayQuest.text = "Los jetzt, raus hier! Hier lang!";
-		Invoke ("ResetText", 4f);
+		_displayQuest = GameObject.Find ("InGameText").GetComponent<Text> ();
+
+		if (UniquePlayerText != "")
+		{
+			_displayQuest.text = "" + UniquePlayerText;
+		}
 	}
 
 	public void ShowDialogue()
 	{
-		if (questCompleted == false && questActive == false)
+		if (QuestCompleted == false && QuestActive == false)
 		{ 
-			displayQuest.text = "" + beforeQuest;
+			_displayQuest.text = "" + BeforeQuest;
 		}
 
-		if(questActive == true)
+		if(QuestActive == true)
 		{
-			displayQuest.text = "" + duringQuest;
+			_displayQuest.text = "" + DuringQuest;
 		}
-		if (questCompleted == true)
+		if (QuestCompleted == true)
 		{
-			displayQuest.text = "" + questGoodEnding;
-		}
-
-		if (displayQuest.text != "")
-		{
-			Invoke ("ResetText", 4f);
+			_displayQuest.text = "" + QuestEnding;
 		}
 	}
 
-	public void StoryText()
+	public void Story()
 	{
-		displayQuest.text = "" + storyText;
+		_displayQuest.text = "" + StoryText;
 		Invoke ("ResetText", 4f);
 	}
 
 	void ResetText()
 	{
-		displayQuest.text = "";
+		_displayQuest.text = "";
 	}
 }

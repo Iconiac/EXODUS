@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -12,23 +12,23 @@ public class QuestController : MonoBehaviour
 
 	public void QuestEvent()
 	{
-		if (questGiver != null && GetComponent<DialogueController>().questActive == true)
+		if (questGiver != null && GetComponent<DialogueController>().QuestActive == true)
 		{
-			questGiver.GetComponent<DialogueController>().questCompleted = true;
-			GetComponent<DialogueController>().questCompleted = true;
+			questGiver.GetComponent<DialogueController>().QuestCompleted = true;
+			GetComponent<DialogueController>().QuestCompleted = true;
 		}
 
 		if (questTarget != null)
 		{  
-			if (GetComponent<DialogueController>().questCompleted == false)
+			if (GetComponent<DialogueController>().QuestCompleted == false)
 			{
-				GetComponent<DialogueController>().questActive = true;
-				questTarget.GetComponent<DialogueController>().questActive = true;
+				GetComponent<DialogueController>().QuestActive = true;
+				questTarget.GetComponent<DialogueController>().QuestActive = true;
 			}
 
-			if (GetComponent<DialogueController>().questActive == true)
+			if (GetComponent<DialogueController>().QuestActive == true)
 			{
-				if (GetComponent<DialogueController>().questCompleted == true)
+				if (GetComponent<DialogueController>().QuestCompleted == true)
 				{
 					questGoal.GetComponent<QuestComplete>().QuestEvent();
 				}

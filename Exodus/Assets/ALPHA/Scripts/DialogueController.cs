@@ -2,54 +2,55 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class DialogueController : MonoBehaviour 
+namespace UnityStandardAssets.Characters.ThirdPerson
 {
-	public string beforeQuest;
-	public string questGoodEnding;
-	public string duringQuest;
-	public string storyText;
-	public bool questCompleted;
-	public bool questActive;
-
-	private Text displayQuest;
-
-	void Start()
+	public class DialogueController : MonoBehaviour 
 	{
-		displayQuest = GameObject.Find ("InGameText").GetComponent<Text> ();
-		displayQuest.text = "Los jetzt, raus hier! Hier lang!";
-		Invoke ("ResetText", 4f);
-	}
-
-	public void ShowDialogue()
-	{
-		if (questCompleted == false && questActive == false)
-		{ 
-			displayQuest.text = "" + beforeQuest;
-		}
-
-		if(questActive == true)
+		[SerializeField] string BeforeQuest;
+		[SerializeField] string QuestEnding;
+		[SerializeField] string StoryText;
+		[SerializeField] string UniquePlayerText;
+	
+		public string DuringQuest;
+	
+		private Text _displayQuest;
+	
+		void Awake()
 		{
-			displayQuest.text = "" + duringQuest;
+			_displayQuest = GameObject.Find ("InGameText").GetComponent<Text> ();
+	
+			if (UniquePlayerText != "")
+			{
+				_displayQuest.text = "" + UniquePlayerText;
+			}
 		}
-		if (questCompleted == true)
+	
+		public void ShowDialogue()
 		{
-			displayQuest.text = "" + questGoodEnding;
+			if (GetComponent<QuestController>().QuestCompleted == false && GetComponent<QuestController>().QuestActive == false)
+			{ 
+				_displayQuest.text = "" + BeforeQuest;
+			}
+	
+			if(GetComponent<QuestController>().QuestActive == true)
+			{
+				_displayQuest.text = "" + DuringQuest;
+			}
+			if (GetComponent<QuestController>().QuestCompleted == true)
+			{
+				_displayQuest.text = "" + QuestEnding;
+			}
 		}
-
-		if (displayQuest.text != "")
+	
+		public void Story()
 		{
+			_displayQuest.text = "" + StoryText;
 			Invoke ("ResetText", 4f);
 		}
-	}
-
-	public void StoryText()
-	{
-		displayQuest.text = "" + storyText;
-		Invoke ("ResetText", 4f);
-	}
-
-	void ResetText()
-	{
-		displayQuest.text = "";
+	
+		void ResetText()
+		{
+			_displayQuest.text = "";
+		}
 	}
 }

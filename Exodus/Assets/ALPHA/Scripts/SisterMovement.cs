@@ -3,46 +3,58 @@ using System.Collections;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
-[RequireComponent(typeof (NavMeshAgent))]
-[RequireComponent(typeof (ThirdPersonCharacter))]
-public class SisterMovement : MonoBehaviour 
-{
-	public NavMeshAgent agent { get; private set; }
-	public ThirdPersonCharacter character { get; private set; }
-	public Vector3 target;
-	public GameObject goTerrain;
-
-	private void Start()
+	[RequireComponent(typeof (NavMeshAgent))]
+	[RequireComponent(typeof (ThirdPersonCharacter))]
+	public class SisterMovement : MonoBehaviour 
 	{
-		agent = GetComponentInChildren<NavMeshAgent>();
-		character = GetComponent<ThirdPersonCharacter>();
-		target = this.transform.position;
-		agent.updateRotation = false;
-		agent.updatePosition = true;
-	}
+		[SerializeField] GameObject GoTerrain;
+		[SerializeField] GameObject Port;
 
-	private void Update()
-	{
-			agent.SetDestination(target);
-			character.Move(agent.desiredVelocity, false, false);
+		public NavMeshAgent agent { get; private set; }
+		public ThirdPersonCharacter character { get; private set; }
+		public Vector3 target;
 
-		if (target == transform.position)
+		private Collider _portCollider;
+		private Collider _terrainCollider;
+
+		private void Start()
 		{
-			character.Move(Vector3.zero, false, false);
+			agent = GetComponentInChildren<NavMeshAgent>();
+			character = GetComponent<ThirdPersonCharacter>();
+			target = this.transform.position;
+			agent.updateRotation = false;
+			agent.updatePosition = true;
+			_portCollider = Port.GetComponent<Collider>();
+			_terrainCollider = GoTerrain.GetComponent<Collider>();
 		}
-		
-		if (Input.GetMouseButton (0)) 
+	
+		private void Update()
 		{
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hit;
-			
-			if (goTerrain.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity))
+				agent.SetDestination(target);
+				character.Move(agent.desiredVelocity, false, false);
+	
+			if (target == transform.position)
 			{
-				target = hit.point;
+				character.Move(Vector3.zero, false, false);
 			}
+			
+			if (Input.GetMouseButton (0)) 
+			{
+				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				RaycastHit hit;
+				
+				if (_terrainCollider.Raycast(ray, out hit, Mathf.Infinity))
+				{
+					target = hit.point;
+				}
+				
+				if (_portCollider.Raycast(ray, out hit, Mathf.Infinity))
+				{
+					target = hit.point;
+				}
+			}
+			
 		}
-		
 	}
-}
 }
 

@@ -5,15 +5,23 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 {
 public class Interact : MonoBehaviour 
 {
-	public float interactDistance;
+	[SerializeField] float InteractDistance;
+
 	private float _currentshortestDistance;
 	private GameObject _intTarget;
+	//private DialogueController _dialoge;
 
 	
+	/*void Awake()
+	{
+		_dialoge = _intTarget.GetComponent<DialogueController>(); //Unmöglich in diesem Fall da _intTarget zu Beginn null ist
+																  //NullReferenceException beim Start :[
+	}*/
+
 	void FixedUpdate()
 	{
 		_intTarget = null;
-		_currentshortestDistance = interactDistance;
+		_currentshortestDistance = InteractDistance;
 		
 		GameObject[] PotentialTargets = GameObject.FindGameObjectsWithTag("NPC");
 		
@@ -32,7 +40,15 @@ public class Interact : MonoBehaviour
 		{
 			if (Input.GetButtonDown ("Interact"))
 			{
-				StartCoroutine("Questing");
+				if (_intTarget.GetComponent<DialogueController>().DuringQuest != "")
+				{
+					StartCoroutine("Questing");
+				}
+
+				else
+				{
+					_intTarget.GetComponent<DialogueController>().Story();
+				}
 			}
 		}
 	}

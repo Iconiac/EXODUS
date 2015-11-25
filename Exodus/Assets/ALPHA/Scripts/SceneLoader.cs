@@ -4,14 +4,19 @@ using System.Collections;
 public class SceneLoader : MonoBehaviour 
 {
 
-	[SerializeField] string sceneToLoad;
-	[SerializeField] GameObject player;
+	[SerializeField] string SceneToLoad;
+	[SerializeField] GameObject Player;
 
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject == player)
+		if (col.gameObject == Player)
 		{
-			Application.LoadLevel(sceneToLoad);
+			Invoke ("LoadEnd", 8f);
 		}
+	}
+
+	void LoadEnd()
+	{
+		Application.LoadLevel(SceneToLoad);
 	}
 }

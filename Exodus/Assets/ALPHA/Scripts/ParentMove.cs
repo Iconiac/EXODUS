@@ -7,17 +7,27 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	[RequireComponent(typeof (ThirdPersonCharacter))]
 	public class ParentMove : MonoBehaviour 
 	{
+		[SerializeField] GameObject goal;
+
 		public NavMeshAgent agent { get; private set; }
 		public ThirdPersonCharacter character { get; private set; }
 		public Vector3 target;
-		public GameObject goal;
-		public GameObject destroyGoal;
-		
+
 		private void Start()
 		{
 			agent = GetComponentInChildren<NavMeshAgent>();
 			character = GetComponent<ThirdPersonCharacter>();
-			target = goal.transform.position;
+
+			if (gameObject.tag == "Parent")
+			{
+				target = goal.transform.position;
+			}
+
+			else
+			{
+				target = this.transform.position;
+			}
+
 			agent.updateRotation = false;
 			agent.updatePosition = true;
 		}
@@ -35,7 +45,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void OnCollisionEnter(Collision col)
 		{
-			if (col.gameObject == destroyGoal)
+			if (col.gameObject == goal)
 			{
 				Destroy(gameObject);
 			}

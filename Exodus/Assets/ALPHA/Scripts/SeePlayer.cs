@@ -1,112 +1,122 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class SeePlayer : MonoBehaviour 
+namespace UnityStandardAssets.Characters.ThirdPerson
 {
-	public float fieldOfViewAngle = 110f;           
-	public bool playerInSight;
-	private bool sisterInSight;
-	public GameObject sister;
-	public GameObject sisterHead;
-	private GameObject player;                      
-	private RaycastHit hit;
-	public GameObject eyes;
-	public float viewDistance;
-	public GameObject playerHead;
-	private Quaternion startRot;
-	public bool rot;
-	public Transform[] waypoints;
-	private int cur = 0;
-	public float speed = 0.3f;
+	public class SeePlayer : MonoBehaviour 
+	{
+		[SerializeField] float FieldOfViewAngle = 110f;           
+		[SerializeField] float Speed = 0.07f;
+		[SerializeField] string Discovery;
+		[SerializeField] GameObject Eyes;
+		[SerializeField] float ViewDistance;
+		[SerializeField] bool ShouldRotate;
+		[SerializeField] Transform[] Waypoints;
+
+		private int _cur = 0;
+		private Text _discovery;
+		private GameObject _player;
+		private GameObject _sister;
+		private GameObject _playerHead;
+		private GameObject _sisterHead;
+		private RaycastHit _hit;
+		private bool _playerInSight;
+		private ThirdPersonUserControl _move;
+		private float _moveSpeed;
+		private float _animSpeed;
+		private Vector3 _sisterTarget;
+		
+		void Awake()
+		{
+			_sister = GameObject.Find ("LilSister");
+			_player = GameObject.FindWithTag("Player");
+			_sisterHead = GameObject.Find ("SisterHead");
+			_playerHead = GameObject.Find ("PlayerHead");
+			_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
+			_move = _player.GetComponent<ThirdPersonUserControl>();
+			_moveSpeed = _player.GetComponent<ThirdPersonCharacter>().m_MoveSpeedMultiplier;
+			_animSpeed = _player.GetComponent<ThirdPersonCharacter>().m_AnimSpeedMultiplier;
+			_sisterTarget = _sister.GetComponent<SisterMovement>().target;
+		}
 	
-	void Awake()
-	{
-		player = GameObject.FindWithTag("Player");
-		startRot = transform.rotation;
-	}
-
-	void FixedUpdate()
-	{
-		if (playerInSight == false && sisterInSight == false)
+		void FixedUpdate()
 		{
-		if (transform.position != waypoints [cur].position) 
-		{
-			Vector3 p = Vector3.MoveTowards (transform.position, waypoints [cur].position, speed);
-			GetComponent<Rigidbody> ().MovePosition (p);
-			if (rot == true)
+	
+			if (_playerInSight == false)
 			{
-				transform.LookAt (p);
-			}
-		} 
-		if (transform.position == waypoints[cur].position)
-			{
-			cur = (cur + 1) % waypoints.Length;
+				if (transform.position != Waypoints [_cur].position) 
+				{
+					Vector3 p = Vector3.MoveTowards (transform.position, Waypoints [_cur].position, Speed);
+					GetComponent<Rigidbody> ().MovePosition (p);
+				
+					if (ShouldRotate == true)
+					{
+						transform.LookAt (p);
+					}
+				} 
+				
+				if (transform.position == Waypoints[_cur].position)
+				{
+					_cur = (_cur + 1) % Waypoints.Length;
+				}
 			}
 		}
-	}
-
-		void OnTriggerStay (Collider other)
-		{
-
-			if(other.gameObject == player)
+	
+			void OnTriggerStay (Collider other)
 			{
-				Debug.Log("Is in Collider");
-				Vector3 direction = playerHead.transform.position - eyes.transform.position;
-				float angle = Vector3.Angle(direction, eyes.transform.forward);
-
-				if(angle < fieldOfViewAngle * 0.5f)
+	
+				if(other.gameObject == _player)
 				{
-				Debug.DrawLine(eyes.transform.position, hit.point);
-					if(Physics.Raycast(eyes.transform.position, direction.normalized, out hit, viewDistance))
+					Vector3 direction = _playerHead.transform.position - Eyes.transform.position;
+					float angle = Vector3.Angle(direction, Eyes.transform.forward);
+	
+					if(angle < FieldOfViewAngle * 0.5f)
 					{
-						if(hit.collider.gameObject == player)
+						if(Physics.Raycast(Eyes.transform.position, direction.normalized, out _hit, ViewDistance))
 						{
-							playerInSight = true;
-
-						if(sisterInSight == false)
-						{
-							transform.LookAt(playerHead.transform.position);
-						}
+							if(_hit.collider.gameObject == _player)
+							{
+								LoseGame();
+								_playerInSight = true;
+							}
 						}
 					}
 				}
-			}
-			
-		if (other.gameObject == sister)
-		{
-			Vector3 direction = sisterHead.transform.position - eyes.transform.position;
-			float angle = Vector3.Angle(direction, eyes.transform.forward);
-			
-			if(angle < fieldOfViewAngle * 0.5f)
+				
+			if (other.gameObject == _sister)
 			{
-				Debug.DrawLine(eyes.transform.position, hit.point);
-				if(Physics.Raycast(eyes.transform.position, direction.normalized, out hit, viewDistance))
+				Vector3 direction = _sisterHead.transform.position - Eyes.transform.position;
+				float angle = Vector3.Angle(direction, Eyes.transform.forward);
+				
+				if(angle < FieldOfViewAngle * 0.5f)
 				{
-					if(hit.collider.gameObject == sister)
+					if(Physics.Raycast(Eyes.transform.position, direction.normalized, out _hit, ViewDistance))
 					{
-						sisterInSight = true;
-						if (playerInSight == false)
-						{
-						transform.LookAt(sisterHead.transform.position);
+						if(_hit.collider.gameObject == _sister)
+						{	
+							LoseGame();
+							_playerInSight = true;
 						}
 					}
 				}
 			}
 		}
-	}
-
-		void OnTriggerExit (Collider other)
+	
+	
+		void LoseGame()
 		{
-			if(other.gameObject == player)
-			{
-				playerInSight = false;
-				transform.rotation = startRot;
-			}
-
-			if(other.gameObject == sister)
-			{
-				sisterInSight = false;
-				transform.rotation = startRot;
-			}
+			_discovery.text = "" + Discovery;
+			_move.enabled = false;
+			_moveSpeed = 0f;
+			_animSpeed = 0f;
+			_sisterTarget = _sister.transform.position;
+			Invoke ("Restart", 4f);
 		}
+	
+		void Restart()
+		{
+			Application.LoadLevel("First");
+		}
+	}
 }

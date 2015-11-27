@@ -30,7 +30,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	
 		private void Update()
 		{
-			Debug.Log(target);
 				agent.SetDestination(target);
 				character.Move(agent.desiredVelocity, false, false);
 	

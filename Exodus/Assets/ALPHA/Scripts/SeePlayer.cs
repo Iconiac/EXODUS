@@ -13,6 +13,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] bool ShouldRotate;
 		[SerializeField] Transform[] Waypoints;
         [SerializeField] GameObject Eyes;
+		[SerializeField] GameObject Checkpoint;
+		[SerializeField] GameObject CameraToActivate;
+		[SerializeField] GameObject CameraToDeactivate;
+		[SerializeField] GameObject Player;
 
         private bool _playerInSight;
         private int _cur = 0;
@@ -78,11 +82,25 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
 				Invoke ("Restart", 4f);
 			}
+
+			else if (gameObject.tag == "Spotlight")
+			{
+				Invoke ("Respawn", 4f);
+			}
 		}
 	
 		void Restart()
 		{
 			Application.LoadLevel("First");
+		}
+
+		void Respawn()
+		{
+			Player.transform.position = Checkpoint.transform.position;
+			_playerInSight = false;
+			CameraToActivate.SetActive(true);
+			CameraToDeactivate.SetActive(false);
+			_discovery.text = "Soll ich Ihren Teddy holen oder weitergehen?"; 
 		}
 
 	}

@@ -73,12 +73,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		void LoseGame()
 		{
 			_discovery.text = "" + Discovery;
-			Invoke ("Restart", 4f);
+
+			if (gameObject.tag == "Enemy")
+			{
+				Invoke ("Restart", 4f);
+			}
 		}
 	
 		void Restart()
 		{
 			Application.LoadLevel("First");
 		}
+
 	}
 }

@@ -8,38 +8,49 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	{
 		[SerializeField] float FieldOfViewAngle = 110f;           
 		[SerializeField] float Speed = 0.07f;
-		[SerializeField] string Discovery;
-		[SerializeField] GameObject Eyes;
-		[SerializeField] float ViewDistance;
+        [SerializeField] float ViewDistance;
+        [SerializeField] string Discovery;
 		[SerializeField] bool ShouldRotate;
 		[SerializeField] Transform[] Waypoints;
+        [SerializeField] GameObject Eyes;
+		[SerializeField] GameObject Checkpoint;
+		[SerializeField] GameObject CameraToActivate;
+		[SerializeField] GameObject CameraToDeactivate;
+		[SerializeField] GameObject Player;
 
-		private int _cur = 0;
+        private bool _playerInSight;
+        private int _cur = 0;
 		private Text _discovery;
-		private GameObject _player;
-		private GameObject _sister;
-		private GameObject _playerHead;
-		private GameObject _sisterHead;
 		private RaycastHit _hit;
-		private bool _playerInSight;
-		private ThirdPersonUserControl _move;
-		private float _moveSpeed;
-		private float _animSpeed;
-		private Vector3 _sisterTarget;
+        private GameObject[] _players;
 		
 		void Awake()
 		{
-			_sister = GameObject.Find ("LilSister");
-			_player = GameObject.FindWithTag("Player");
-			_sisterHead = GameObject.Find ("SisterHead");
-			_playerHead = GameObject.Find ("PlayerHead");
+            _players = GameObject.FindGameObjectsWithTag("Player");
 			_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
-			_move = _player.GetComponent<ThirdPersonUserControl>();
-			_moveSpeed = _player.GetComponent<ThirdPersonCharacter>().m_MoveSpeedMultiplier;
-			_animSpeed = _player.GetComponent<ThirdPersonCharacter>().m_AnimSpeedMultiplier;
-			_sisterTarget = _sister.GetComponent<SisterMovement>().target;
 		}
-	
+
+	void Update()
+        {
+            foreach(GameObject player in _players)
+            {
+                Vector3 direction = player.transform.position - Eyes.transform.position;
+                float angle = Vector3.Angle(direction, Eyes.transform.forward);
+
+                if (angle < FieldOfViewAngle * 0.5f)
+                {
+                    if (Physics.Raycast(Eyes.transform.position, direction.normalized, out _hit, ViewDistance))
+                    {
+                        if (_hit.collider.gameObject == player)
+                        {
+                            LoseGame();
+                            _playerInSight = true;
+                        }
+                    }
+                }
+            }
+        }
+
 		void FixedUpdate()
 		{
 	
@@ -62,61 +73,35 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				}
 			}
 		}
-	
-			void OnTriggerStay (Collider other)
-			{
-	
-				if(other.gameObject == _player)
-				{
-					Vector3 direction = _playerHead.transform.position - Eyes.transform.position;
-					float angle = Vector3.Angle(direction, Eyes.transform.forward);
-	
-					if(angle < FieldOfViewAngle * 0.5f)
-					{
-						if(Physics.Raycast(Eyes.transform.position, direction.normalized, out _hit, ViewDistance))
-						{
-							if(_hit.collider.gameObject == _player)
-							{
-								LoseGame();
-								_playerInSight = true;
-							}
-						}
-					}
-				}
-				
-			if (other.gameObject == _sister)
-			{
-				Vector3 direction = _sisterHead.transform.position - Eyes.transform.position;
-				float angle = Vector3.Angle(direction, Eyes.transform.forward);
-				
-				if(angle < FieldOfViewAngle * 0.5f)
-				{
-					if(Physics.Raycast(Eyes.transform.position, direction.normalized, out _hit, ViewDistance))
-					{
-						if(_hit.collider.gameObject == _sister)
-						{	
-							LoseGame();
-							_playerInSight = true;
-						}
-					}
-				}
-			}
-		}
-	
-	
+
 		void LoseGame()
 		{
 			_discovery.text = "" + Discovery;
-			_move.enabled = false;
-			_moveSpeed = 0f;
-			_animSpeed = 0f;
-			_sisterTarget = _sister.transform.position;
-			Invoke ("Restart", 4f);
+
+			if (gameObject.tag == "Enemy")
+			{
+				Invoke ("Restart", 4f);
+			}
+
+			else if (gameObject.tag == "Spotlight")
+			{
+				Invoke ("Respawn", 4f);
+			}
 		}
 	
 		void Restart()
 		{
 			Application.LoadLevel("First");
 		}
+
+		void Respawn()
+		{
+			Player.transform.position = Checkpoint.transform.position;
+			_playerInSight = false;
+			CameraToActivate.SetActive(true);
+			CameraToDeactivate.SetActive(false);
+			_discovery.text = "Soll ich Ihren Teddy holen oder weitergehen?"; 
+		}
+
 	}
 }

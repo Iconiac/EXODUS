@@ -20,13 +20,13 @@ public class PlayerMovement : MonoBehaviour
 
 		if (h != 0) 
 		{
-			_agent.Move(Vector3.right * Time.deltaTime * Speed *h);
+			transform.position += Vector3.right * Time.deltaTime * Speed *h;
             transform.forward = Vector3.Normalize(new Vector3(h, 0f, v));
         }
 
 		if (v != 0)
 		{
-			_agent.Move (Vector3.forward * Time.deltaTime * Speed *v);
+			transform.position += Vector3.forward * Time.deltaTime * Speed *v;
             transform.forward = Vector3.Normalize(new Vector3(h, 0f, v));
         }
 

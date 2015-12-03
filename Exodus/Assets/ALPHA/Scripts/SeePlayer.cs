@@ -12,11 +12,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         [SerializeField] string Discovery;
 		[SerializeField] bool ShouldRotate;
 		[SerializeField] Transform[] Waypoints;
-        [SerializeField] GameObject Eyes;
+        /*[SerializeField] GameObject Eyes;
 		[SerializeField] GameObject Checkpoint;
 		[SerializeField] GameObject CameraToActivate;
 		[SerializeField] GameObject CameraToDeactivate;
-		[SerializeField] GameObject Player;
+		[SerializeField] GameObject Player;*/
 
         private bool _playerInSight;
         private int _cur = 0;
@@ -24,7 +24,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		private RaycastHit _hit;
         private GameObject[] _players;
 		
-		void Awake()
+		/*void Awake()
 		{
             _players = GameObject.FindGameObjectsWithTag("Player");
 			_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
@@ -49,7 +49,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     }
                 }
             }
-        }
+        }*/
 
 		void FixedUpdate()
 		{
@@ -74,7 +74,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 
-		void LoseGame()
+		/*void LoseGame()
 		{
 			_discovery.text = "" + Discovery;
 
@@ -101,7 +101,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			CameraToActivate.SetActive(true);
 			CameraToDeactivate.SetActive(false);
 			_discovery.text = "Soll ich Ihren Teddy holen oder weitergehen?"; 
-		}
+		}*/
 
 	}
 }

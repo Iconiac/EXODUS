@@ -22,7 +22,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			agent = GetComponentInChildren<NavMeshAgent>();
 			character = GetComponent<ThirdPersonCharacter>();
 			target = this.transform.position;
-			agent.updateRotation = false;
+			agent.updateRotation = true;
 			agent.updatePosition = true;
 			_portCollider = Port.GetComponent<Collider>();
 			_terrainCollider = GoTerrain.GetComponent<Collider>();

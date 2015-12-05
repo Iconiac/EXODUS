@@ -1,17 +1,27 @@
 fileFormatVersion: 2
-guid: 81712d363fd68dc48bee8a5bd871ac20
-timeCreated: 1449058530
+guid: cc1c152cdd4ece64095b47d001bf01dc
+timeCreated: 1449224498
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
     100002: Group1
+    100004: sphere
+    100006: sphere1
     400000: //RootNode
     400002: Group1
+    400004: sphere
+    400006: sphere1
     2300000: Group1
+    2300002: sphere
+    2300004: sphere1
     3300000: Group1
+    3300002: sphere
+    3300004: sphere1
     4300000: Group1
+    4300002: sphere
+    4300004: sphere1
   materials:
     importMaterials: 1
     materialName: 0

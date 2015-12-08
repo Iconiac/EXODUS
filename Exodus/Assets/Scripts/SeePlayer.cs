@@ -24,13 +24,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		private RaycastHit _hit;
         private GameObject[] _players;
 		
-		/*void Awake()
+		void Awake()
 		{
             _players = GameObject.FindGameObjectsWithTag("Player");
-			_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
+			//_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
 		}
 
-	void Update()
+	/*void Update()
         {
             foreach(GameObject player in _players)
             {
@@ -74,9 +74,22 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 
-		/*void LoseGame()
+        void OnTriggerEnter(Collider col)
+        {
+            foreach (GameObject _player in _players)
+            {
+                if (col.gameObject == _player)
+                {
+                    _playerInSight = true;
+                    _player.GetComponent<NavMeshAgent>().enabled = false;
+                    LoseGame();
+                }
+            }
+
+        }
+		void LoseGame()
 		{
-			_discovery.text = "" + Discovery;
+			//_discovery.text = "" + Discovery;
 
 			if (gameObject.tag == "Enemy")
 			{
@@ -91,10 +104,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	
 		void Restart()
 		{
-			Application.LoadLevel("First");
+			Application.LoadLevel("City_Scene");
 		}
 
-		void Respawn()
+		/*void Respawn()
 		{
 			Player.transform.position = Checkpoint.transform.position;
 			_playerInSight = false;

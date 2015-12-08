@@ -4,36 +4,39 @@ using UnityEngine.UI;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
-	public class ScreenChangeAlpha : MonoBehaviour 
-	{
+    public class ScreenChange : MonoBehaviour
+    {
 
-		[SerializeField] GameObject PositionToSpawnAt;
-		[SerializeField] GameObject CameraToActivate;
+        [SerializeField] GameObject PositionToSpawnAt;
+        [SerializeField] GameObject CameraToActivate;
+        [SerializeField] GameObject CameraToDeactivate;
 		[SerializeField] GameObject[] EnemiesToActivate;
 		[SerializeField] GameObject[] OptionalThingsToActivate;
 		[SerializeField] GameObject[] OptionalThingsToDeactivate;
-		[SerializeField] string TextToShow;
-		[SerializeField] string TextForTooMuchDistance;
+		//[SerializeField] string TextToShow;
+		//[SerializeField] string TextForTooMuchDistance;
 		[SerializeField] float ChangeDistance;
 		[SerializeField] bool ShouldSisterStay;
 
 		private GameObject _sister;
 		private GameObject _player;
-		private GameObject _cameraToDeactivate;
-		private SisterMovement _sisterTarget;
-		private Text _inGameMessage;
-		private NavMeshAgent _agent;
+		//private Text _inGameMessage;
+		private NavMeshAgent _sisterAgent;
+        private NavMeshAgent _playerAgent;
+        private Vector3 _playerPosition;
+        private Vector3 _sisterPosition;
 
 		void Awake()
 		{
 			_player = GameObject.Find("Player");
 			_sister = GameObject.Find ("LilSister");
-			_inGameMessage = GameObject.Find ("InGameText").GetComponent<Text> ();
-			_sisterTarget = _sister.GetComponent<SisterMovement>();
-			_cameraToDeactivate = transform.parent.gameObject;
-			_agent = _sister.GetComponent<NavMeshAgent>();
+			//_inGameMessage = GameObject.Find ("InGameText").GetComponent<Text> ();
+			_sisterAgent = _sister.GetComponent<NavMeshAgent>();
+            _playerAgent = _player.GetComponent<NavMeshAgent>();
+            _sisterPosition = new Vector3(PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z - 2);
+            _playerPosition = new Vector3(PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z);
 
-		}
+        }
 			
 		void OnCollisionEnter (Collision col)
 		{
@@ -41,19 +44,19 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
 				if (Vector3.Distance(_sister.transform.position, _player.transform.position) <= ChangeDistance)
 				{
-					Vector3 _sisterPosition = new Vector3 (PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z - 2);
 					CameraToActivate.SetActive(true);
-					_player.transform.position = PositionToSpawnAt.transform.position;
+                    CameraToDeactivate.SetActive(false);
+                    _playerAgent.Warp(_playerPosition);
 
 					if (ShouldSisterStay == false)
 					{
-						_agent.Warp(_sisterPosition);
-						_sisterTarget.target = _sister.transform.position;
+						_sisterAgent.Warp(_sisterPosition);
+						//_sisterTarget.target = _sister.transform.position;
 					}
-					if (TextToShow != "")
+					/*if (TextToShow != "")
 					{
 						_inGameMessage.text = "" + TextToShow;
-					}
+					}*/
 					
 					foreach (GameObject enemy in EnemiesToActivate)
 					{
@@ -70,12 +73,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 						stuff.SetActive(false);
 					}
 					
-					_cameraToDeactivate.SetActive(false);
 				}
 
 				else if (Vector3.Distance(_sister.transform.position, _player.transform.position) >= ChangeDistance)
 				{
-					_inGameMessage.text = "" + TextForTooMuchDistance;
+					//_inGameMessage.text = "" + TextForTooMuchDistance;
 				}
 
 			}

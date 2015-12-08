@@ -23,13 +23,13 @@ public class PlayerMovement : MonoBehaviour
 
 		if (h != 0) 
 		{
-			transform.position += _cam.transform.right * Time.deltaTime * Speed *h;
+			_agent.Move(_cam.transform.right * Time.deltaTime * Speed *h);
             transform.forward = _cam.transform.TransformDirection(new Vector3(h, 0f, v));
         }
 
 		if (v != 0)
 		{
-			transform.position += _cam.transform.forward * Time.deltaTime * Speed *v;
+			_agent.Move(_cam.transform.forward * Time.deltaTime * Speed *v);
 			transform.forward = _cam.transform.TransformDirection(new Vector3(h, 0f, v));
         }
 	}

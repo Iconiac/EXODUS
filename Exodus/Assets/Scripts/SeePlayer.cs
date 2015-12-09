@@ -30,16 +30,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			//_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
 		}
 
-	/*void Update()
+	void Update()
         {
             foreach(GameObject player in _players)
             {
-                Vector3 direction = player.transform.position - Eyes.transform.position;
-                float angle = Vector3.Angle(direction, Eyes.transform.forward);
+                Vector3 direction = player.transform.position - this.transform.position;
+                float angle = Vector3.Angle(direction, this.transform.forward);
 
                 if (angle < FieldOfViewAngle * 0.5f)
                 {
-                    if (Physics.Raycast(Eyes.transform.position, direction.normalized, out _hit, ViewDistance))
+                    if (Physics.Raycast(this.transform.position, direction.normalized, out _hit, ViewDistance))
                     {
                         if (_hit.collider.gameObject == player)
                         {
@@ -49,7 +49,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     }
                 }
             }
-        }*/
+        }
 
 		void FixedUpdate()
 		{
@@ -74,22 +74,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 
-        void OnTriggerEnter(Collider col)
-        {
-            foreach (GameObject _player in _players)
-            {
-                if (col.gameObject == _player)
-                {
-                    _playerInSight = true;
-                    _player.GetComponent<NavMeshAgent>().enabled = false;
-                    LoseGame();
-                }
-            }
-
-        }
 		void LoseGame()
 		{
-			//_discovery.text = "" + Discovery;
+            //_discovery.text = "" + Discovery;
+            foreach (GameObject _player in _players)
+            {
+                _player.GetComponent<NavMeshAgent>().enabled = false;
+            }
 
 			if (gameObject.tag == "Enemy")
 			{

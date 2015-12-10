@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f8093894c4f7b7347ba539172653a87c
 timeCreated: 1449567187
+=======
+guid: e02f67550ef5489429cebf9935340e19
+timeCreated: 1449137716
+>>>>>>> LD_SC_MT_FINAL+LIGHTMAP
 licenseType: Free
 NativeFormatImporter:
   userData: 

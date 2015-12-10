@@ -20,7 +20,7 @@ public class ChangeWaterOffset : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-        water.material.mainTextureOffset = new Vector2(Time.time / MainOne, MainTwo);
+        water.material.mainTextureOffset = new Vector2(MainOne, Time.time / MainTwo);
         water.material.SetTextureOffset("_DetailAlbedoMap", new Vector2(SecondOne, Time.time / SecondTwo));
 	}
 }

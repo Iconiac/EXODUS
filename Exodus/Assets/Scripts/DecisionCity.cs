@@ -32,13 +32,13 @@ public class DecisionCity : MonoBehaviour
 			if (_momChosen == true)
 			{
 				Mom.SetActive(true);
-				Mom.GetComponent<QuestController>().questTarget.SetActive(true);
+				//Mom.GetComponent<QuestController>().questTarget.SetActive(true);
 			}
 			
 			if (_dadChosen == true)
 			{
 				Dad.SetActive(true);
-				Dad.GetComponent<QuestController>().questTarget.SetActive(true);
+				//Dad.GetComponent<QuestController>().questTarget.SetActive(true);
 			}
 
 		}

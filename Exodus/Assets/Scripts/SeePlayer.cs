@@ -9,25 +9,25 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] float FieldOfViewAngle = 110f;           
 		[SerializeField] float Speed = 0.07f;
         [SerializeField] float ViewDistance;
-        [SerializeField] string Discovery;
+        [SerializeField] string[] Discovery;
 		[SerializeField] bool ShouldRotate;
+        [SerializeField] Text InGameText;
 		[SerializeField] Transform[] Waypoints;
-        /*[SerializeField] GameObject Eyes;
+        [SerializeField] GameObject DialogePanel;
 		[SerializeField] GameObject Checkpoint;
 		[SerializeField] GameObject CameraToActivate;
 		[SerializeField] GameObject CameraToDeactivate;
-		[SerializeField] GameObject Player;*/
 
         private bool _playerInSight;
         private int _cur = 0;
-		private Text _discovery;
+        private int _index;
 		private RaycastHit _hit;
         private GameObject[] _players;
 		
 		void Awake()
 		{
             _players = GameObject.FindGameObjectsWithTag("Player");
-			//_discovery = GameObject.Find ("InGameText").GetComponent<Text> ();
+            _index = Random.Range(0, Discovery.Length);
 		}
 
 	void Update()
@@ -76,7 +76,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void LoseGame()
 		{
-            //_discovery.text = "" + Discovery;
+            DialogePanel.SetActive(true);
+            InGameText.text = "" + Discovery[_index];
             foreach (GameObject _player in _players)
             {
                 _player.GetComponent<NavMeshAgent>().enabled = false;

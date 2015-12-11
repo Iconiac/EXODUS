@@ -2,8 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-namespace UnityStandardAssets.Characters.ThirdPerson
-{
 	public class QuestController : MonoBehaviour 
 	{
 		public GameObject questGiver;
@@ -39,4 +37,4 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		}
 	
 	}
-}
+

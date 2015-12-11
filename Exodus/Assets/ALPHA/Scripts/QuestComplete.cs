@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace UnityStandardAssets.Characters.ThirdPerson
-{
 	public class QuestComplete : MonoBehaviour
 	{
 
@@ -39,4 +37,4 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 	}
-}
+

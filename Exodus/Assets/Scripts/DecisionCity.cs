@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace UnityStandardAssets.Characters.ThirdPerson
-{
+
 public class DecisionCity : MonoBehaviour 
 {
 
 	[SerializeField] GameObject Mom;
 	[SerializeField] GameObject Dad;
 
-	private bool _dadChosen;
-	private bool _momChosen;
+	public static bool _dadChosen;
+	public static bool _momChosen;
 
 	void OnCollisionEnter (Collision col)
 	{
@@ -19,11 +18,13 @@ public class DecisionCity : MonoBehaviour
 			if (col.gameObject.tag == "MomWay")
 			{
 				_momChosen = true;
+                _dadChosen = false;
 			}
 			
 			if (col.gameObject.tag == "DadWay")
 			{
 				_dadChosen = true;
+                _momChosen = false;
 			}	
 		}
 		
@@ -45,4 +46,4 @@ public class DecisionCity : MonoBehaviour
 		
 	}
 }
-}
+

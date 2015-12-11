@@ -2,22 +2,20 @@
 using UnityEngine.UI;
 using System.Collections;
 
-namespace UnityStandardAssets.Characters.ThirdPerson
+public class DialogueController : MonoBehaviour 
 {
-	public class DialogueController : MonoBehaviour 
-	{
-		[SerializeField] string BeforeQuest;
-		[SerializeField] string QuestEnding;
-		[SerializeField] string StoryText;
-		[SerializeField] string UniquePlayerText;
+	[SerializeField] string BeforeQuest;
+	[SerializeField] string QuestEnding;
+	[SerializeField] string StoryText;
+	[SerializeField] string UniquePlayerText;
+    [SerializeField] Text _displayQuest;
+
+    public string DuringQuest;
 	
-		public string DuringQuest;
-	
-		private Text _displayQuest;
+		
 	
 		void Awake()
 		{
-			_displayQuest = GameObject.Find ("InGameText").GetComponent<Text> ();
 	
 			if (UniquePlayerText != "")
 			{
@@ -27,6 +25,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	
 		public void ShowDialogue()
 		{
+            
 			if (GetComponent<QuestController>().QuestCompleted == false && GetComponent<QuestController>().QuestActive == false)
 			{ 
 				_displayQuest.text = "" + BeforeQuest;
@@ -53,4 +52,3 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			_displayQuest.text = "";
 		}
 	}
-}

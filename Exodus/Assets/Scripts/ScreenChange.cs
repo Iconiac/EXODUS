@@ -2,25 +2,24 @@
 using System.Collections;
 using UnityEngine.UI;
 
-namespace UnityStandardAssets.Characters.ThirdPerson
-{
     public class ScreenChange : MonoBehaviour
     {
 
         [SerializeField] GameObject PositionToSpawnAt;
+        [SerializeField] GameObject DialogePanel;
         [SerializeField] GameObject CameraToActivate;
         [SerializeField] GameObject CameraToDeactivate;
 		[SerializeField] GameObject[] EnemiesToActivate;
 		[SerializeField] GameObject[] OptionalThingsToActivate;
 		[SerializeField] GameObject[] OptionalThingsToDeactivate;
-		//[SerializeField] string TextToShow;
-		//[SerializeField] string TextForTooMuchDistance;
+        [SerializeField] Text InGameText;
+		[SerializeField] string TextToShow;
+		[SerializeField] string TextForTooMuchDistance;
 		[SerializeField] float ChangeDistance;
 		[SerializeField] bool ShouldSisterStay;
 
 		private GameObject _sister;
 		private GameObject _player;
-		//private Text _inGameMessage;
 		private NavMeshAgent _sisterAgent;
         private NavMeshAgent _playerAgent;
         private Vector3 _playerPosition;
@@ -30,7 +29,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			_player = GameObject.Find("Player");
 			_sister = GameObject.Find ("LilSister");
-			//_inGameMessage = GameObject.Find ("InGameText").GetComponent<Text> ();
 			_sisterAgent = _sister.GetComponent<NavMeshAgent>();
             _playerAgent = _player.GetComponent<NavMeshAgent>();
             _sisterPosition = new Vector3(PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z - 2);
@@ -51,12 +49,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 					if (ShouldSisterStay == false)
 					{
 						_sisterAgent.Warp(_sisterPosition);
-						//_sisterTarget.target = _sister.transform.position;
 					}
-					/*if (TextToShow != "")
-					{
-						_inGameMessage.text = "" + TextToShow;
-					}*/
+                    if (TextToShow != "")
+                    {
+                        DialogePanel.SetActive(true);
+                        InGameText.text = "" + TextToShow;
+                        Invoke("DisablePanel", 4f);
+                    }
 					
 					foreach (GameObject enemy in EnemiesToActivate)
 					{
@@ -77,11 +76,18 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 				else if (Vector3.Distance(_sister.transform.position, _player.transform.position) >= ChangeDistance)
 				{
-					//_inGameMessage.text = "" + TextForTooMuchDistance;
-				}
+                    DialogePanel.SetActive(true);
+                    InGameText.text = "" + TextForTooMuchDistance;
+                    Invoke("DisablePanel", 4f);
+                }
 
 			}
 		}
 
+        void DisablePanel()
+        {
+            DialogePanel.SetActive(false);
+        }
+
 	}
-}
+

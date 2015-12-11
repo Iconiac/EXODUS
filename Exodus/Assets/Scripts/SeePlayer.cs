@@ -17,8 +17,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] GameObject Checkpoint;
 		[SerializeField] GameObject CameraToActivate;
 		[SerializeField] GameObject CameraToDeactivate;
+        [SerializeField] GameObject Player;
 
         private bool _playerInSight;
+        private Vector3 _startPosition;
         private int _cur = 0;
         private int _index;
 		private RaycastHit _hit;
@@ -28,6 +30,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
             _players = GameObject.FindGameObjectsWithTag("Player");
             _index = Random.Range(0, Discovery.Length);
+            _startPosition = gameObject.transform.position;
 		}
 
 	void Update()
@@ -99,14 +102,20 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			Application.LoadLevel("City_Scene");
 		}
 
-		/*void Respawn()
+		void Respawn()
 		{
-			Player.transform.position = Checkpoint.transform.position;
 			_playerInSight = false;
 			CameraToActivate.SetActive(true);
 			CameraToDeactivate.SetActive(false);
-			_discovery.text = "Soll ich Ihren Teddy holen oder weitergehen?"; 
-		}*/
+			InGameText.text = "Soll ich Ihren Teddy holen oder weitergehen?";
+            foreach (GameObject _player in _players)
+            {
+                _player.GetComponent<NavMeshAgent>().enabled = true;
+            }
+            Player.GetComponent<NavMeshAgent>().Warp(Checkpoint.transform.position);
+            gameObject.transform.position = _startPosition;
+            gameObject.SetActive(false);
+        }
 
 	}
 }

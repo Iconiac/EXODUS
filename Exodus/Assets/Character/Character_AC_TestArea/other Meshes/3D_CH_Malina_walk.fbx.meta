@@ -1,0 +1,3013 @@
+fileFormatVersion: 2
+guid: 56500d7c773f7614d9090e6fa7c1663c
+timeCreated: 1449870828
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: _10
+    100004: _11
+    100006: _12
+    100008: _13
+    100010: _14
+    100012: _15
+    100014: _16
+    100016: _2
+    100018: _3
+    100020: _3D_CH_002_Tochter_Malina:_3D_CH_002_Tochter_Malina
+    100022: _4
+    100024: _5
+    100026: _6
+    100028: _7
+    100030: _8
+    100032: _9
+    100034: BellyParent
+    100036: Biped:Biped
+    100038: Biped_Guide:Biped_Guide
+    100040: Biped_Shadow:Biped_Shadow
+    100042: BLClawBone
+    100044: BLClawBone1
+    100046: BLClawBone2
+    100048: bone
+    100050: bone1
+    100052: bone15
+    100054: bone16
+    100056: bone17
+    100058: bone18
+    100060: bone19
+    100062: bone2
+    100064: bone20
+    100066: bone21
+    100068: bone22
+    100070: bone23
+    100072: bone24
+    100074: bone25
+    100076: bone26
+    100078: bone27
+    100080: bone28
+    100082: bone29
+    100084: bone3
+    100086: bone30
+    100088: bone31
+    100090: bone32
+    100092: bone33
+    100094: bone34
+    100096: bone35
+    100098: bone36
+    100100: bone37
+    100102: bone4
+    100104: bone46
+    100106: bone47
+    100108: bone48
+    100110: bone49
+    100112: bone5
+    100114: bone50
+    100116: bone51
+    100118: bone52
+    100120: bone53
+    100122: bone54
+    100124: bone55
+    100126: bone56
+    100128: bone57
+    100130: bone58
+    100132: bone59
+    100134: bone6
+    100136: bone60
+    100138: bone62
+    100140: bone63
+    100142: bone7
+    100144: bone_
+    100146: bone_1
+    100148: bone_2
+    100150: bone_3
+    100152: bone_ncl1_1
+    100154: BRClawBone
+    100156: BRClawBone1
+    100158: BRClawBone2
+    100160: cog
+    100162: crvlist
+    100164: crvlist1
+    100166: crvlist10
+    100168: crvlist11
+    100170: crvlist12
+    100172: crvlist13
+    100174: crvlist14
+    100176: crvlist15
+    100178: crvlist15_Point2_ClsCtr
+    100180: crvlist16
+    100182: crvlist16_Point4_ClsCtr
+    100184: crvlist17
+    100186: crvlist2
+    100188: crvlist3
+    100190: crvlist4
+    100192: crvlist5
+    100194: crvlist6
+    100196: crvlist7
+    100198: crvlist8
+    100200: crvlist9
+    100202: crvlist_Point1_ClsCtr
+    100204: crvlist_Point1_ClsCtr1
+    100206: crvlist_Point1_ClsCtr10
+    100208: crvlist_Point1_ClsCtr11
+    100210: crvlist_Point1_ClsCtr12
+    100212: crvlist_Point1_ClsCtr13
+    100214: crvlist_Point1_ClsCtr14
+    100216: crvlist_Point1_ClsCtr15
+    100218: crvlist_Point1_ClsCtr16
+    100220: crvlist_Point1_ClsCtr2
+    100222: crvlist_Point1_ClsCtr3
+    100224: crvlist_Point1_ClsCtr4
+    100226: crvlist_Point1_ClsCtr5
+    100228: crvlist_Point1_ClsCtr6
+    100230: crvlist_Point1_ClsCtr7
+    100232: crvlist_Point1_ClsCtr8
+    100234: crvlist_Point1_ClsCtr9
+    100236: crvlist_Point2_ClsCtr
+    100238: crvlist_Point2_ClsCtr1
+    100240: crvlist_Point3_ClsCtr
+    100242: crvlist_Point3_ClsCtr1
+    100244: crvlist_Point4_ClsCtr
+    100246: crvlist_Point_ClsCtr
+    100248: crvlist_Point_ClsCtr1
+    100250: crvlist_Point_ClsCtr10
+    100252: crvlist_Point_ClsCtr11
+    100254: crvlist_Point_ClsCtr12
+    100256: crvlist_Point_ClsCtr13
+    100258: crvlist_Point_ClsCtr14
+    100260: crvlist_Point_ClsCtr15
+    100262: crvlist_Point_ClsCtr16
+    100264: crvlist_Point_ClsCtr17
+    100266: crvlist_Point_ClsCtr18
+    100268: crvlist_Point_ClsCtr2
+    100270: crvlist_Point_ClsCtr3
+    100272: crvlist_Point_ClsCtr4
+    100274: crvlist_Point_ClsCtr5
+    100276: crvlist_Point_ClsCtr6
+    100278: crvlist_Point_ClsCtr7
+    100280: crvlist_Point_ClsCtr8
+    100282: crvlist_Point_ClsCtr9
+    100284: D_CH_002_Tochter_Malina:Group6
+    100286: eff
+    100288: eff1
+    100290: eff10
+    100292: eff11
+    100294: eff12
+    100296: eff13
+    100298: eff13_ncl1_1
+    100300: eff14
+    100302: eff14_ncl1_1
+    100304: eff15
+    100306: eff15_ncl1_1
+    100308: eff16
+    100310: eff16_ncl1_1
+    100312: eff17
+    100314: eff17_ncl1_1
+    100316: eff18
+    100318: eff18_ncl1_1
+    100320: eff19
+    100322: eff19_ncl1_1
+    100324: eff1_ncl1_1
+    100326: eff2
+    100328: eff20
+    100330: eff20_ncl1_1
+    100332: eff21
+    100334: eff21_ncl1_1
+    100336: eff22
+    100338: eff22_ncl1_1
+    100340: eff23
+    100342: eff23_ncl1_1
+    100344: eff24
+    100346: eff24_ncl1_1
+    100348: eff25
+    100350: eff25_ncl1_1
+    100352: eff26
+    100354: eff26_ncl1_1
+    100356: eff27
+    100358: eff27_ncl1_1
+    100360: eff28
+    100362: eff28_ncl1_1
+    100364: eff29
+    100366: eff2_ncl1_1
+    100368: eff3
+    100370: eff30
+    100372: eff31
+    100374: eff32
+    100376: eff33
+    100378: eff34
+    100380: eff35
+    100382: eff36
+    100384: eff37
+    100386: eff38
+    100388: eff39
+    100390: eff3_ncl1_1
+    100392: eff4
+    100394: eff40
+    100396: eff41
+    100398: eff42
+    100400: eff43
+    100402: eff44
+    100404: eff45
+    100406: eff46
+    100408: eff47
+    100410: eff48
+    100412: eff49
+    100414: eff4_ncl1_1
+    100416: eff5
+    100418: eff50
+    100420: eff54
+    100422: eff55
+    100424: eff59
+    100426: eff6
+    100428: eff60
+    100430: eff61
+    100432: eff62
+    100434: eff63
+    100436: eff64
+    100438: eff7
+    100440: eff8
+    100442: eff9
+    100444: eff_ncl1_1
+    100446: FinBase
+    100448: FinBase1
+    100450: FinBase2
+    100452: FinBase3
+    100454: FinBase4
+    100456: FinBase5
+    100458: FinBase6
+    100460: FinBase7
+    100462: FinBase8
+    100464: FinBase9
+    100466: FinUpVector
+    100468: FinUpVector1
+    100470: FinUpVector2
+    100472: FinUpVector3
+    100474: FinUpVector4
+    100476: FinUpVector5
+    100478: FinUpVector6
+    100480: FinUpVector7
+    100482: FinUpVector8
+    100484: FinUpVector9
+    100486: GlobalSRT
+    100488: GlobalSRT_ncl1_1
+    100490: GlobalSRT_ncl1_2
+    100492: Group1
+    100494: Group19578
+    100496: Head
+    100498: Head_ncl1_1
+    100500: Head_ncl1_2
+    100502: HeadEff
+    100504: HeadRoot
+    100506: HeadRoot_ncl1_1
+    100508: HingeLElbow2
+    100510: HingeLElbow3
+    100512: HingeLKnee1
+    100514: HingeLKnee2
+    100516: HingeRElbow1
+    100518: HingeRElbow2
+    100520: HingeRKnee1
+    100522: HingeRKnee2
+    100524: hipBone
+    100526: hipCluster1
+    100528: hipCluster3
+    100530: hipCluster4
+    100532: hipCluster5
+    100534: HipPlate
+    100536: LArmEff
+    100538: LArmPitBase
+    100540: LArmPitBind
+    100542: LArmPitTop
+    100544: LArmUpV
+    100546: LArmUpV_NeutralPose
+    100548: LBelly1
+    100550: LBelly2
+    100552: LBicep
+    100554: LBicep_ncl1_1
+    100556: LCalfBack
+    100558: LCalfCenter
+    100560: LCalfCurve
+    100562: LEar1
+    100564: LEar2
+    100566: LEar3
+    100568: LeftFoot
+    100570: LeftFoot_NeutralPose
+    100572: LeftRoll
+    100574: LeftRoll_NeutralPose
+    100576: LeftTip
+    100578: LeftTip_NeutralPose
+    100580: LElbow
+    100582: LElbowDeform1
+    100584: LElbowDeformUpv
+    100586: LElbowJoint1
+    100588: LElbowJoint2
+    100590: LFoot1
+    100592: LFoot2
+    100594: LFoot3
+    100596: LFoot4
+    100598: LFootBind1
+    100600: LFootBind2
+    100602: LFootBind3
+    100604: LFootBone1
+    100606: LFootBone1_ncl1_1
+    100608: LFootBone2
+    100610: LFootBone2_ncl1_1
+    100612: LFootBone3
+    100614: LFootBone3_ncl1_1
+    100616: LFootEff
+    100618: LFootGuide1
+    100620: LFootGuide2
+    100622: LFootGuide3
+    100624: LFootGuide4
+    100626: LFootRoot
+    100628: LFootRoot_ncl1_1
+    100630: LFootUpV1
+    100632: LFootUpV2
+    100634: LFootUpV3
+    100636: LForearm
+    100638: LForearm_ncl1_1
+    100640: LForeArmCenter
+    100642: LForeArmCurve
+    100644: LForeArmSquash
+    100646: LHand
+    100648: LHand_grab
+    100650: LHand_ncl1_1
+    100652: LHand_ncl1_2
+    100654: LHandEffector
+    100656: LHandEnd
+    100658: LHandRoot
+    100660: LHandRoot_ncl1_1
+    100662: LHipBind
+    100664: LHipBottom
+    100666: LHipTop
+    100668: LIndex1
+    100670: LIndex1_ncl1_1
+    100672: LIndex1_ncl1_2
+    100674: LIndex1_NeutralPose
+    100676: LIndex2
+    100678: LIndex2_ncl1_1
+    100680: LIndex2_ncl1_2
+    100682: LIndex2_NeutralPose
+    100684: LIndex3
+    100686: LIndex3_ncl1_1
+    100688: LIndex3_ncl1_2
+    100690: LIndex3_NeutralPose
+    100692: LIndex4
+    100694: LIndex_fingerBlade
+    100696: LIndexEffector
+    100698: LIndexRoot
+    100700: LIndexRoot_ncl1_1
+    100702: LKnee
+    100704: LKneeDeform
+    100706: LKneeDeformUpv
+    100708: LLeg
+    100710: LlegEff
+    100712: LlegUpV
+    100714: LlegUpV_NeutralPose
+    100716: LLowerThigh
+    100718: LMiddle1
+    100720: LMiddle1_ncl1_1
+    100722: LMiddle1_ncl1_2
+    100724: LMiddle1_NeutralPose
+    100726: LMiddle2
+    100728: LMiddle2_ncl1_1
+    100730: LMiddle2_ncl1_2
+    100732: LMiddle2_NeutralPose
+    100734: LMiddle3
+    100736: LMiddle3_ncl1_1
+    100738: LMiddle3_ncl1_2
+    100740: LMiddle3_NeutralPose
+    100742: LMiddle4
+    100744: LMiddle_fingerBlade
+    100746: LMiddleEffector
+    100748: LMiddleRoot
+    100750: LMiddleRoot_ncl1_1
+    100752: LowerStomach
+    100754: LowerStomachParent
+    100756: LPinky1
+    100758: LPinky1_ncl1_1
+    100760: LPinky1_ncl1_2
+    100762: LPinky1_NeutralPose
+    100764: LPinky2
+    100766: LPinky2_ncl1_1
+    100768: LPinky2_ncl1_2
+    100770: LPinky2_NeutralPose
+    100772: LPinky3
+    100774: LPinky3_ncl1_1
+    100776: LPinky3_ncl1_2
+    100778: LPinky3_NeutralPose
+    100780: LPinky4
+    100782: LPinky_fingerBlade
+    100784: LPinkyEffector
+    100786: LPinkyRoot
+    100788: LPinkyRoot_ncl1_1
+    100790: LPivot
+    100792: LPivotBase
+    100794: LPivotLeft
+    100796: LPivotLeft_ncl1_1
+    100798: LPivotRight
+    100800: LPivotRight_ncl1_1
+    100802: LPlacePivot
+    100804: LRear1
+    100806: LRing1
+    100808: LRing1_ncl1_1
+    100810: LRing1_ncl1_2
+    100812: LRing1_NeutralPose
+    100814: LRing2
+    100816: LRing2_ncl1_1
+    100818: LRing2_ncl1_2
+    100820: LRing2_NeutralPose
+    100822: LRing3
+    100824: LRing3_ncl1_1
+    100826: LRing3_ncl1_2
+    100828: LRing3_NeutralPose
+    100830: LRing4
+    100832: LRing_fingerBlade
+    100834: LRingEffector
+    100836: LRingRoot
+    100838: LRingRoot_ncl1_1
+    100840: LRoot
+    100842: LRoot1
+    100844: LRoot1_ncl1_1
+    100846: LRoot_ncl1_1
+    100848: LShin
+    100850: LShin_ncl1_1
+    100852: LShoulder
+    100854: LShoulder_ncl1_1
+    100856: LShoulder_ncl1_2
+    100858: LShoulderEff
+    100860: LShoulderRoot
+    100862: LShoulderRoot_ncl1_1
+    100864: LShoulderStart
+    100866: LThigh
+    100868: LThigh_ncl1_1
+    100870: LThighBack1
+    100872: LThighBack2
+    100874: LThighBind
+    100876: LThumb1
+    100878: LThumb1_ncl1_1
+    100880: LThumb1_ncl1_2
+    100882: LThumb1_NeutralPose
+    100884: LThumb2
+    100886: LThumb2_ncl1_1
+    100888: LThumb2_ncl1_2
+    100890: LThumb2_NeutralPose
+    100892: LThumb3
+    100894: LThumb3_ncl1_1
+    100896: LThumb3_ncl1_2
+    100898: LThumb3_NeutralPose
+    100900: LThumb4
+    100902: LThumb_fingerBlade
+    100904: LThumbEffector
+    100906: LThumbRoot
+    100908: LThumbRoot_ncl1_1
+    100910: LToeOffset1
+    100912: LToeOffset2
+    100914: Lumbar1
+    100916: Lumbar1_ncl1_1
+    100918: Lumbar2
+    100920: Lumbar2_ncl1_1
+    100922: Lumbar3
+    100924: Lumbar3_ncl1_1
+    100926: Lumbar4
+    100928: Lumbar4_ncl1_1
+    100930: Neck
+    100932: Neck_ncl1_1
+    100934: Neck_ncl1_2
+    100936: RArmEff
+    100938: RArmPitBase
+    100940: RArmPitBind
+    100942: RArmPitTop
+    100944: RArmUpV
+    100946: RArmUpV_NeutralPose
+    100948: RBelly1
+    100950: RBelly2
+    100952: RBicep
+    100954: RBicep_ncl1_1
+    100956: RCalfBack
+    100958: RCalfCenter
+    100960: RCalfCurve
+    100962: REar1
+    100964: REar2
+    100966: REar3
+    100968: RElbow
+    100970: RElbowDeform
+    100972: RElbowDeformUpv
+    100974: RElbowJoint1
+    100976: RElbowJoint2
+    100978: RFoot1
+    100980: RFoot2
+    100982: RFoot3
+    100984: RFoot4
+    100986: RFootBind1
+    100988: RFootBind2
+    100990: RFootBind3
+    100992: RFootBone1
+    100994: RFootBone1_ncl1_1
+    100996: RFootBone2
+    100998: RFootBone2_ncl1_1
+    101000: RFootBone3
+    101002: RFootBone3_ncl1_1
+    101004: RFootEff
+    101006: RFootGuide1
+    101008: RFootGuide2
+    101010: RFootGuide3
+    101012: RFootGuide4
+    101014: RFootRoot
+    101016: RFootRoot_ncl1_1
+    101018: RFootUpV1
+    101020: RFootUpV2
+    101022: RFootUpV3
+    101024: RForearm
+    101026: RForearm_ncl1_1
+    101028: RForeArmCenter
+    101030: RForeArmCurve
+    101032: RForeArmSquash
+    101034: RHand
+    101036: RHand_grab
+    101038: RHand_ncl1_1
+    101040: RHand_ncl1_2
+    101042: RHandEffector
+    101044: RHandEnd
+    101046: RHandRoot
+    101048: RHandRoot_ncl1_1
+    101050: RHipBind
+    101052: RHipBottom
+    101054: RHipTop
+    101056: RibCageEnd
+    101058: RibCageStart
+    101060: RightFoot
+    101062: RightFoot_NeutralPose
+    101064: RightRoll
+    101066: RightRoll_NeutralPose
+    101068: RightTip
+    101070: RightTip_NeutralPose
+    101072: RIndex1
+    101074: RIndex1_ncl1_1
+    101076: RIndex1_ncl1_2
+    101078: RIndex1_NeutralPose
+    101080: RIndex2
+    101082: RIndex2_ncl1_1
+    101084: RIndex2_ncl1_2
+    101086: RIndex2_NeutralPose
+    101088: RIndex3
+    101090: RIndex3_ncl1_1
+    101092: RIndex3_ncl1_2
+    101094: RIndex3_NeutralPose
+    101096: RIndex4
+    101098: RIndex_fingerBlade
+    101100: RIndexEffector
+    101102: RIndexRoot
+    101104: RIndexRoot_ncl1_1
+    101106: RKnee
+    101108: RKneeDeform
+    101110: RKneeDeformUpv
+    101112: RLeg
+    101114: RlegEff
+    101116: RlegUpV
+    101118: RlegUpV_NeutralPose
+    101120: RLowerThigh
+    101122: RMiddle1
+    101124: RMiddle1_ncl1_1
+    101126: RMiddle1_ncl1_2
+    101128: RMiddle1_NeutralPose
+    101130: RMiddle2
+    101132: RMiddle2_ncl1_1
+    101134: RMiddle2_ncl1_2
+    101136: RMiddle2_NeutralPose
+    101138: RMiddle3
+    101140: RMiddle3_ncl1_1
+    101142: RMiddle3_ncl1_2
+    101144: RMiddle3_NeutralPose
+    101146: RMiddle4
+    101148: RMiddle_fingerBlade
+    101150: RMiddleEffector
+    101152: RMiddleRoot
+    101154: RMiddleRoot_ncl1_1
+    101156: root
+    101158: root1
+    101160: root13
+    101162: root14
+    101164: root15
+    101166: root16
+    101168: root19
+    101170: root1_ncl1_1
+    101172: root2
+    101174: root20
+    101176: root2_ncl1_1
+    101178: root3
+    101180: root32
+    101182: root33
+    101184: root34
+    101186: root35
+    101188: root36
+    101190: root37
+    101192: root38
+    101194: root39
+    101196: root3_ncl1_1
+    101198: root4
+    101200: root40
+    101202: root41
+    101204: root42
+    101206: root43
+    101208: root44
+    101210: root45
+    101212: root46
+    101214: root47
+    101216: root48
+    101218: root4_ncl1_1
+    101220: root5
+    101222: root50
+    101224: root51
+    101226: root55
+    101228: root56
+    101230: root57
+    101232: root58
+    101234: root59
+    101236: root6
+    101238: root60
+    101240: root_ncl1_1
+    101242: RPinky1
+    101244: RPinky1_ncl1_1
+    101246: RPinky1_ncl1_2
+    101248: RPinky1_NeutralPose
+    101250: RPinky2
+    101252: RPinky2_ncl1_1
+    101254: RPinky2_ncl1_2
+    101256: RPinky2_NeutralPose
+    101258: RPinky3
+    101260: RPinky3_ncl1_1
+    101262: RPinky3_ncl1_2
+    101264: RPinky3_NeutralPose
+    101266: RPinky4
+    101268: RPinky_fingerBlade
+    101270: RPinkyEffector
+    101272: RPinkyRoot
+    101274: RPinkyRoot_ncl1_1
+    101276: RPivot
+    101278: RPivotBase
+    101280: RPivotLeft
+    101282: RPivotLeft_ncl1_1
+    101284: RPivotRight
+    101286: RPivotRight_ncl1_1
+    101288: RPlacePivot
+    101290: RRear1
+    101292: RRing1
+    101294: RRing1_ncl1_1
+    101296: RRing1_ncl1_2
+    101298: RRing1_NeutralPose
+    101300: RRing2
+    101302: RRing2_ncl1_1
+    101304: RRing2_ncl1_2
+    101306: RRing2_NeutralPose
+    101308: RRing3
+    101310: RRing3_ncl1_1
+    101312: RRing3_ncl1_2
+    101314: RRing3_NeutralPose
+    101316: RRing4
+    101318: RRing_fingerBlade
+    101320: RRingEffector
+    101322: RRingRoot
+    101324: RRingRoot_ncl1_1
+    101326: RRoot
+    101328: RRoot1
+    101330: RRoot1_ncl1_1
+    101332: RRoot_ncl1_1
+    101334: RShin
+    101336: RShin_ncl1_1
+    101338: RShoulder
+    101340: RShoulder_ncl1_1
+    101342: RShoulder_ncl1_2
+    101344: RShoulderEff
+    101346: RShoulderRoot
+    101348: RShoulderRoot_ncl1_1
+    101350: RShoulderStart
+    101352: RThigh
+    101354: RThigh_ncl1_1
+    101356: RThighBack1
+    101358: RThighBack2
+    101360: RThighBind
+    101362: RThumb1
+    101364: RThumb1_ncl1_1
+    101366: RThumb1_ncl1_2
+    101368: RThumb1_NeutralPose
+    101370: RThumb2
+    101372: RThumb2_ncl1_1
+    101374: RThumb2_ncl1_2
+    101376: RThumb2_NeutralPose
+    101378: RThumb3
+    101380: RThumb3_ncl1_1
+    101382: RThumb3_ncl1_2
+    101384: RThumb3_NeutralPose
+    101386: RThumb4
+    101388: RThumb_fingerBlade
+    101390: RThumbEffector
+    101392: RThumbRoot
+    101394: RThumbRoot_ncl1_1
+    101396: RToeOffset1
+    101398: RToeOffset2
+    101400: Spine1Parent
+    101402: Spine2Parent
+    101404: SpineBase
+    101406: SpineChestDepth
+    101408: SpineEff
+    101410: SpineEff_ncl1_1
+    101412: SpineHipDepth
+    101414: SpineRoot
+    101416: SpineSpline
+    101418: SpineStart
+    101420: StomachCenter
+    101422: StretchBind22
+    101424: StretchBind23
+    101426: StretchBind25
+    101428: StretchBind27
+    101430: StretchBind28
+    101432: StretchBind29
+    101434: StretchBind30
+    101436: StretchBind31
+    101438: StretchBind32
+    101440: StretchBind33
+    101442: StretchBind34
+    101444: StretchBind35
+    101446: UpperBody
+    101448: UpperBody_ncl1_1
+    101450: UpperBody_NeutralPose
+    101452: UpperStomach
+    400000: //RootNode
+    400002: _10
+    400004: _11
+    400006: _12
+    400008: _13
+    400010: _14
+    400012: _15
+    400014: _16
+    400016: _2
+    400018: _3
+    400020: _3D_CH_002_Tochter_Malina:_3D_CH_002_Tochter_Malina
+    400022: _4
+    400024: _5
+    400026: _6
+    400028: _7
+    400030: _8
+    400032: _9
+    400034: BellyParent
+    400036: Biped:Biped
+    400038: Biped_Guide:Biped_Guide
+    400040: Biped_Shadow:Biped_Shadow
+    400042: BLClawBone
+    400044: BLClawBone1
+    400046: BLClawBone2
+    400048: bone
+    400050: bone1
+    400052: bone15
+    400054: bone16
+    400056: bone17
+    400058: bone18
+    400060: bone19
+    400062: bone2
+    400064: bone20
+    400066: bone21
+    400068: bone22
+    400070: bone23
+    400072: bone24
+    400074: bone25
+    400076: bone26
+    400078: bone27
+    400080: bone28
+    400082: bone29
+    400084: bone3
+    400086: bone30
+    400088: bone31
+    400090: bone32
+    400092: bone33
+    400094: bone34
+    400096: bone35
+    400098: bone36
+    400100: bone37
+    400102: bone4
+    400104: bone46
+    400106: bone47
+    400108: bone48
+    400110: bone49
+    400112: bone5
+    400114: bone50
+    400116: bone51
+    400118: bone52
+    400120: bone53
+    400122: bone54
+    400124: bone55
+    400126: bone56
+    400128: bone57
+    400130: bone58
+    400132: bone59
+    400134: bone6
+    400136: bone60
+    400138: bone62
+    400140: bone63
+    400142: bone7
+    400144: bone_
+    400146: bone_1
+    400148: bone_2
+    400150: bone_3
+    400152: bone_ncl1_1
+    400154: BRClawBone
+    400156: BRClawBone1
+    400158: BRClawBone2
+    400160: cog
+    400162: crvlist
+    400164: crvlist1
+    400166: crvlist10
+    400168: crvlist11
+    400170: crvlist12
+    400172: crvlist13
+    400174: crvlist14
+    400176: crvlist15
+    400178: crvlist15_Point2_ClsCtr
+    400180: crvlist16
+    400182: crvlist16_Point4_ClsCtr
+    400184: crvlist17
+    400186: crvlist2
+    400188: crvlist3
+    400190: crvlist4
+    400192: crvlist5
+    400194: crvlist6
+    400196: crvlist7
+    400198: crvlist8
+    400200: crvlist9
+    400202: crvlist_Point1_ClsCtr
+    400204: crvlist_Point1_ClsCtr1
+    400206: crvlist_Point1_ClsCtr10
+    400208: crvlist_Point1_ClsCtr11
+    400210: crvlist_Point1_ClsCtr12
+    400212: crvlist_Point1_ClsCtr13
+    400214: crvlist_Point1_ClsCtr14
+    400216: crvlist_Point1_ClsCtr15
+    400218: crvlist_Point1_ClsCtr16
+    400220: crvlist_Point1_ClsCtr2
+    400222: crvlist_Point1_ClsCtr3
+    400224: crvlist_Point1_ClsCtr4
+    400226: crvlist_Point1_ClsCtr5
+    400228: crvlist_Point1_ClsCtr6
+    400230: crvlist_Point1_ClsCtr7
+    400232: crvlist_Point1_ClsCtr8
+    400234: crvlist_Point1_ClsCtr9
+    400236: crvlist_Point2_ClsCtr
+    400238: crvlist_Point2_ClsCtr1
+    400240: crvlist_Point3_ClsCtr
+    400242: crvlist_Point3_ClsCtr1
+    400244: crvlist_Point4_ClsCtr
+    400246: crvlist_Point_ClsCtr
+    400248: crvlist_Point_ClsCtr1
+    400250: crvlist_Point_ClsCtr10
+    400252: crvlist_Point_ClsCtr11
+    400254: crvlist_Point_ClsCtr12
+    400256: crvlist_Point_ClsCtr13
+    400258: crvlist_Point_ClsCtr14
+    400260: crvlist_Point_ClsCtr15
+    400262: crvlist_Point_ClsCtr16
+    400264: crvlist_Point_ClsCtr17
+    400266: crvlist_Point_ClsCtr18
+    400268: crvlist_Point_ClsCtr2
+    400270: crvlist_Point_ClsCtr3
+    400272: crvlist_Point_ClsCtr4
+    400274: crvlist_Point_ClsCtr5
+    400276: crvlist_Point_ClsCtr6
+    400278: crvlist_Point_ClsCtr7
+    400280: crvlist_Point_ClsCtr8
+    400282: crvlist_Point_ClsCtr9
+    400284: D_CH_002_Tochter_Malina:Group6
+    400286: eff
+    400288: eff1
+    400290: eff10
+    400292: eff11
+    400294: eff12
+    400296: eff13
+    400298: eff13_ncl1_1
+    400300: eff14
+    400302: eff14_ncl1_1
+    400304: eff15
+    400306: eff15_ncl1_1
+    400308: eff16
+    400310: eff16_ncl1_1
+    400312: eff17
+    400314: eff17_ncl1_1
+    400316: eff18
+    400318: eff18_ncl1_1
+    400320: eff19
+    400322: eff19_ncl1_1
+    400324: eff1_ncl1_1
+    400326: eff2
+    400328: eff20
+    400330: eff20_ncl1_1
+    400332: eff21
+    400334: eff21_ncl1_1
+    400336: eff22
+    400338: eff22_ncl1_1
+    400340: eff23
+    400342: eff23_ncl1_1
+    400344: eff24
+    400346: eff24_ncl1_1
+    400348: eff25
+    400350: eff25_ncl1_1
+    400352: eff26
+    400354: eff26_ncl1_1
+    400356: eff27
+    400358: eff27_ncl1_1
+    400360: eff28
+    400362: eff28_ncl1_1
+    400364: eff29
+    400366: eff2_ncl1_1
+    400368: eff3
+    400370: eff30
+    400372: eff31
+    400374: eff32
+    400376: eff33
+    400378: eff34
+    400380: eff35
+    400382: eff36
+    400384: eff37
+    400386: eff38
+    400388: eff39
+    400390: eff3_ncl1_1
+    400392: eff4
+    400394: eff40
+    400396: eff41
+    400398: eff42
+    400400: eff43
+    400402: eff44
+    400404: eff45
+    400406: eff46
+    400408: eff47
+    400410: eff48
+    400412: eff49
+    400414: eff4_ncl1_1
+    400416: eff5
+    400418: eff50
+    400420: eff54
+    400422: eff55
+    400424: eff59
+    400426: eff6
+    400428: eff60
+    400430: eff61
+    400432: eff62
+    400434: eff63
+    400436: eff64
+    400438: eff7
+    400440: eff8
+    400442: eff9
+    400444: eff_ncl1_1
+    400446: FinBase
+    400448: FinBase1
+    400450: FinBase2
+    400452: FinBase3
+    400454: FinBase4
+    400456: FinBase5
+    400458: FinBase6
+    400460: FinBase7
+    400462: FinBase8
+    400464: FinBase9
+    400466: FinUpVector
+    400468: FinUpVector1
+    400470: FinUpVector2
+    400472: FinUpVector3
+    400474: FinUpVector4
+    400476: FinUpVector5
+    400478: FinUpVector6
+    400480: FinUpVector7
+    400482: FinUpVector8
+    400484: FinUpVector9
+    400486: GlobalSRT
+    400488: GlobalSRT_ncl1_1
+    400490: GlobalSRT_ncl1_2
+    400492: Group1
+    400494: Group19578
+    400496: Head
+    400498: Head_ncl1_1
+    400500: Head_ncl1_2
+    400502: HeadEff
+    400504: HeadRoot
+    400506: HeadRoot_ncl1_1
+    400508: HingeLElbow2
+    400510: HingeLElbow3
+    400512: HingeLKnee1
+    400514: HingeLKnee2
+    400516: HingeRElbow1
+    400518: HingeRElbow2
+    400520: HingeRKnee1
+    400522: HingeRKnee2
+    400524: hipBone
+    400526: hipCluster1
+    400528: hipCluster3
+    400530: hipCluster4
+    400532: hipCluster5
+    400534: HipPlate
+    400536: LArmEff
+    400538: LArmPitBase
+    400540: LArmPitBind
+    400542: LArmPitTop
+    400544: LArmUpV
+    400546: LArmUpV_NeutralPose
+    400548: LBelly1
+    400550: LBelly2
+    400552: LBicep
+    400554: LBicep_ncl1_1
+    400556: LCalfBack
+    400558: LCalfCenter
+    400560: LCalfCurve
+    400562: LEar1
+    400564: LEar2
+    400566: LEar3
+    400568: LeftFoot
+    400570: LeftFoot_NeutralPose
+    400572: LeftRoll
+    400574: LeftRoll_NeutralPose
+    400576: LeftTip
+    400578: LeftTip_NeutralPose
+    400580: LElbow
+    400582: LElbowDeform1
+    400584: LElbowDeformUpv
+    400586: LElbowJoint1
+    400588: LElbowJoint2
+    400590: LFoot1
+    400592: LFoot2
+    400594: LFoot3
+    400596: LFoot4
+    400598: LFootBind1
+    400600: LFootBind2
+    400602: LFootBind3
+    400604: LFootBone1
+    400606: LFootBone1_ncl1_1
+    400608: LFootBone2
+    400610: LFootBone2_ncl1_1
+    400612: LFootBone3
+    400614: LFootBone3_ncl1_1
+    400616: LFootEff
+    400618: LFootGuide1
+    400620: LFootGuide2
+    400622: LFootGuide3
+    400624: LFootGuide4
+    400626: LFootRoot
+    400628: LFootRoot_ncl1_1
+    400630: LFootUpV1
+    400632: LFootUpV2
+    400634: LFootUpV3
+    400636: LForearm
+    400638: LForearm_ncl1_1
+    400640: LForeArmCenter
+    400642: LForeArmCurve
+    400644: LForeArmSquash
+    400646: LHand
+    400648: LHand_grab
+    400650: LHand_ncl1_1
+    400652: LHand_ncl1_2
+    400654: LHandEffector
+    400656: LHandEnd
+    400658: LHandRoot
+    400660: LHandRoot_ncl1_1
+    400662: LHipBind
+    400664: LHipBottom
+    400666: LHipTop
+    400668: LIndex1
+    400670: LIndex1_ncl1_1
+    400672: LIndex1_ncl1_2
+    400674: LIndex1_NeutralPose
+    400676: LIndex2
+    400678: LIndex2_ncl1_1
+    400680: LIndex2_ncl1_2
+    400682: LIndex2_NeutralPose
+    400684: LIndex3
+    400686: LIndex3_ncl1_1
+    400688: LIndex3_ncl1_2
+    400690: LIndex3_NeutralPose
+    400692: LIndex4
+    400694: LIndex_fingerBlade
+    400696: LIndexEffector
+    400698: LIndexRoot
+    400700: LIndexRoot_ncl1_1
+    400702: LKnee
+    400704: LKneeDeform
+    400706: LKneeDeformUpv
+    400708: LLeg
+    400710: LlegEff
+    400712: LlegUpV
+    400714: LlegUpV_NeutralPose
+    400716: LLowerThigh
+    400718: LMiddle1
+    400720: LMiddle1_ncl1_1
+    400722: LMiddle1_ncl1_2
+    400724: LMiddle1_NeutralPose
+    400726: LMiddle2
+    400728: LMiddle2_ncl1_1
+    400730: LMiddle2_ncl1_2
+    400732: LMiddle2_NeutralPose
+    400734: LMiddle3
+    400736: LMiddle3_ncl1_1
+    400738: LMiddle3_ncl1_2
+    400740: LMiddle3_NeutralPose
+    400742: LMiddle4
+    400744: LMiddle_fingerBlade
+    400746: LMiddleEffector
+    400748: LMiddleRoot
+    400750: LMiddleRoot_ncl1_1
+    400752: LowerStomach
+    400754: LowerStomachParent
+    400756: LPinky1
+    400758: LPinky1_ncl1_1
+    400760: LPinky1_ncl1_2
+    400762: LPinky1_NeutralPose
+    400764: LPinky2
+    400766: LPinky2_ncl1_1
+    400768: LPinky2_ncl1_2
+    400770: LPinky2_NeutralPose
+    400772: LPinky3
+    400774: LPinky3_ncl1_1
+    400776: LPinky3_ncl1_2
+    400778: LPinky3_NeutralPose
+    400780: LPinky4
+    400782: LPinky_fingerBlade
+    400784: LPinkyEffector
+    400786: LPinkyRoot
+    400788: LPinkyRoot_ncl1_1
+    400790: LPivot
+    400792: LPivotBase
+    400794: LPivotLeft
+    400796: LPivotLeft_ncl1_1
+    400798: LPivotRight
+    400800: LPivotRight_ncl1_1
+    400802: LPlacePivot
+    400804: LRear1
+    400806: LRing1
+    400808: LRing1_ncl1_1
+    400810: LRing1_ncl1_2
+    400812: LRing1_NeutralPose
+    400814: LRing2
+    400816: LRing2_ncl1_1
+    400818: LRing2_ncl1_2
+    400820: LRing2_NeutralPose
+    400822: LRing3
+    400824: LRing3_ncl1_1
+    400826: LRing3_ncl1_2
+    400828: LRing3_NeutralPose
+    400830: LRing4
+    400832: LRing_fingerBlade
+    400834: LRingEffector
+    400836: LRingRoot
+    400838: LRingRoot_ncl1_1
+    400840: LRoot
+    400842: LRoot1
+    400844: LRoot1_ncl1_1
+    400846: LRoot_ncl1_1
+    400848: LShin
+    400850: LShin_ncl1_1
+    400852: LShoulder
+    400854: LShoulder_ncl1_1
+    400856: LShoulder_ncl1_2
+    400858: LShoulderEff
+    400860: LShoulderRoot
+    400862: LShoulderRoot_ncl1_1
+    400864: LShoulderStart
+    400866: LThigh
+    400868: LThigh_ncl1_1
+    400870: LThighBack1
+    400872: LThighBack2
+    400874: LThighBind
+    400876: LThumb1
+    400878: LThumb1_ncl1_1
+    400880: LThumb1_ncl1_2
+    400882: LThumb1_NeutralPose
+    400884: LThumb2
+    400886: LThumb2_ncl1_1
+    400888: LThumb2_ncl1_2
+    400890: LThumb2_NeutralPose
+    400892: LThumb3
+    400894: LThumb3_ncl1_1
+    400896: LThumb3_ncl1_2
+    400898: LThumb3_NeutralPose
+    400900: LThumb4
+    400902: LThumb_fingerBlade
+    400904: LThumbEffector
+    400906: LThumbRoot
+    400908: LThumbRoot_ncl1_1
+    400910: LToeOffset1
+    400912: LToeOffset2
+    400914: Lumbar1
+    400916: Lumbar1_ncl1_1
+    400918: Lumbar2
+    400920: Lumbar2_ncl1_1
+    400922: Lumbar3
+    400924: Lumbar3_ncl1_1
+    400926: Lumbar4
+    400928: Lumbar4_ncl1_1
+    400930: Neck
+    400932: Neck_ncl1_1
+    400934: Neck_ncl1_2
+    400936: RArmEff
+    400938: RArmPitBase
+    400940: RArmPitBind
+    400942: RArmPitTop
+    400944: RArmUpV
+    400946: RArmUpV_NeutralPose
+    400948: RBelly1
+    400950: RBelly2
+    400952: RBicep
+    400954: RBicep_ncl1_1
+    400956: RCalfBack
+    400958: RCalfCenter
+    400960: RCalfCurve
+    400962: REar1
+    400964: REar2
+    400966: REar3
+    400968: RElbow
+    400970: RElbowDeform
+    400972: RElbowDeformUpv
+    400974: RElbowJoint1
+    400976: RElbowJoint2
+    400978: RFoot1
+    400980: RFoot2
+    400982: RFoot3
+    400984: RFoot4
+    400986: RFootBind1
+    400988: RFootBind2
+    400990: RFootBind3
+    400992: RFootBone1
+    400994: RFootBone1_ncl1_1
+    400996: RFootBone2
+    400998: RFootBone2_ncl1_1
+    401000: RFootBone3
+    401002: RFootBone3_ncl1_1
+    401004: RFootEff
+    401006: RFootGuide1
+    401008: RFootGuide2
+    401010: RFootGuide3
+    401012: RFootGuide4
+    401014: RFootRoot
+    401016: RFootRoot_ncl1_1
+    401018: RFootUpV1
+    401020: RFootUpV2
+    401022: RFootUpV3
+    401024: RForearm
+    401026: RForearm_ncl1_1
+    401028: RForeArmCenter
+    401030: RForeArmCurve
+    401032: RForeArmSquash
+    401034: RHand
+    401036: RHand_grab
+    401038: RHand_ncl1_1
+    401040: RHand_ncl1_2
+    401042: RHandEffector
+    401044: RHandEnd
+    401046: RHandRoot
+    401048: RHandRoot_ncl1_1
+    401050: RHipBind
+    401052: RHipBottom
+    401054: RHipTop
+    401056: RibCageEnd
+    401058: RibCageStart
+    401060: RightFoot
+    401062: RightFoot_NeutralPose
+    401064: RightRoll
+    401066: RightRoll_NeutralPose
+    401068: RightTip
+    401070: RightTip_NeutralPose
+    401072: RIndex1
+    401074: RIndex1_ncl1_1
+    401076: RIndex1_ncl1_2
+    401078: RIndex1_NeutralPose
+    401080: RIndex2
+    401082: RIndex2_ncl1_1
+    401084: RIndex2_ncl1_2
+    401086: RIndex2_NeutralPose
+    401088: RIndex3
+    401090: RIndex3_ncl1_1
+    401092: RIndex3_ncl1_2
+    401094: RIndex3_NeutralPose
+    401096: RIndex4
+    401098: RIndex_fingerBlade
+    401100: RIndexEffector
+    401102: RIndexRoot
+    401104: RIndexRoot_ncl1_1
+    401106: RKnee
+    401108: RKneeDeform
+    401110: RKneeDeformUpv
+    401112: RLeg
+    401114: RlegEff
+    401116: RlegUpV
+    401118: RlegUpV_NeutralPose
+    401120: RLowerThigh
+    401122: RMiddle1
+    401124: RMiddle1_ncl1_1
+    401126: RMiddle1_ncl1_2
+    401128: RMiddle1_NeutralPose
+    401130: RMiddle2
+    401132: RMiddle2_ncl1_1
+    401134: RMiddle2_ncl1_2
+    401136: RMiddle2_NeutralPose
+    401138: RMiddle3
+    401140: RMiddle3_ncl1_1
+    401142: RMiddle3_ncl1_2
+    401144: RMiddle3_NeutralPose
+    401146: RMiddle4
+    401148: RMiddle_fingerBlade
+    401150: RMiddleEffector
+    401152: RMiddleRoot
+    401154: RMiddleRoot_ncl1_1
+    401156: root
+    401158: root1
+    401160: root13
+    401162: root14
+    401164: root15
+    401166: root16
+    401168: root19
+    401170: root1_ncl1_1
+    401172: root2
+    401174: root20
+    401176: root2_ncl1_1
+    401178: root3
+    401180: root32
+    401182: root33
+    401184: root34
+    401186: root35
+    401188: root36
+    401190: root37
+    401192: root38
+    401194: root39
+    401196: root3_ncl1_1
+    401198: root4
+    401200: root40
+    401202: root41
+    401204: root42
+    401206: root43
+    401208: root44
+    401210: root45
+    401212: root46
+    401214: root47
+    401216: root48
+    401218: root4_ncl1_1
+    401220: root5
+    401222: root50
+    401224: root51
+    401226: root55
+    401228: root56
+    401230: root57
+    401232: root58
+    401234: root59
+    401236: root6
+    401238: root60
+    401240: root_ncl1_1
+    401242: RPinky1
+    401244: RPinky1_ncl1_1
+    401246: RPinky1_ncl1_2
+    401248: RPinky1_NeutralPose
+    401250: RPinky2
+    401252: RPinky2_ncl1_1
+    401254: RPinky2_ncl1_2
+    401256: RPinky2_NeutralPose
+    401258: RPinky3
+    401260: RPinky3_ncl1_1
+    401262: RPinky3_ncl1_2
+    401264: RPinky3_NeutralPose
+    401266: RPinky4
+    401268: RPinky_fingerBlade
+    401270: RPinkyEffector
+    401272: RPinkyRoot
+    401274: RPinkyRoot_ncl1_1
+    401276: RPivot
+    401278: RPivotBase
+    401280: RPivotLeft
+    401282: RPivotLeft_ncl1_1
+    401284: RPivotRight
+    401286: RPivotRight_ncl1_1
+    401288: RPlacePivot
+    401290: RRear1
+    401292: RRing1
+    401294: RRing1_ncl1_1
+    401296: RRing1_ncl1_2
+    401298: RRing1_NeutralPose
+    401300: RRing2
+    401302: RRing2_ncl1_1
+    401304: RRing2_ncl1_2
+    401306: RRing2_NeutralPose
+    401308: RRing3
+    401310: RRing3_ncl1_1
+    401312: RRing3_ncl1_2
+    401314: RRing3_NeutralPose
+    401316: RRing4
+    401318: RRing_fingerBlade
+    401320: RRingEffector
+    401322: RRingRoot
+    401324: RRingRoot_ncl1_1
+    401326: RRoot
+    401328: RRoot1
+    401330: RRoot1_ncl1_1
+    401332: RRoot_ncl1_1
+    401334: RShin
+    401336: RShin_ncl1_1
+    401338: RShoulder
+    401340: RShoulder_ncl1_1
+    401342: RShoulder_ncl1_2
+    401344: RShoulderEff
+    401346: RShoulderRoot
+    401348: RShoulderRoot_ncl1_1
+    401350: RShoulderStart
+    401352: RThigh
+    401354: RThigh_ncl1_1
+    401356: RThighBack1
+    401358: RThighBack2
+    401360: RThighBind
+    401362: RThumb1
+    401364: RThumb1_ncl1_1
+    401366: RThumb1_ncl1_2
+    401368: RThumb1_NeutralPose
+    401370: RThumb2
+    401372: RThumb2_ncl1_1
+    401374: RThumb2_ncl1_2
+    401376: RThumb2_NeutralPose
+    401378: RThumb3
+    401380: RThumb3_ncl1_1
+    401382: RThumb3_ncl1_2
+    401384: RThumb3_NeutralPose
+    401386: RThumb4
+    401388: RThumb_fingerBlade
+    401390: RThumbEffector
+    401392: RThumbRoot
+    401394: RThumbRoot_ncl1_1
+    401396: RToeOffset1
+    401398: RToeOffset2
+    401400: Spine1Parent
+    401402: Spine2Parent
+    401404: SpineBase
+    401406: SpineChestDepth
+    401408: SpineEff
+    401410: SpineEff_ncl1_1
+    401412: SpineHipDepth
+    401414: SpineRoot
+    401416: SpineSpline
+    401418: SpineStart
+    401420: StomachCenter
+    401422: StretchBind22
+    401424: StretchBind23
+    401426: StretchBind25
+    401428: StretchBind27
+    401430: StretchBind28
+    401432: StretchBind29
+    401434: StretchBind30
+    401436: StretchBind31
+    401438: StretchBind32
+    401440: StretchBind33
+    401442: StretchBind34
+    401444: StretchBind35
+    401446: UpperBody
+    401448: UpperBody_ncl1_1
+    401450: UpperBody_NeutralPose
+    401452: UpperStomach
+    4300000: D_CH_002_Tochter_Malina:Group6
+    4300002: Group1
+    4300004: Group19578
+    7400000: Walk
+    9500000: //RootNode
+    13700000: D_CH_002_Tochter_Malina:Group6
+    13700002: Group1
+    13700004: Group19578
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _3D_CH_002_Tochter_Malina:_3D_CH_002_Tochter_Malina
+        weight: 1
+      - path: Biped:Biped
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LeftRoll_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LeftRoll_NeutralPose/LeftRoll
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LFootUpV1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3/LFootGuide4
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3/LFootGuide4/LFootBind1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3/LFootGuide4/LFootBind1/LToeOffset1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3/LFootGuide4/LFootBind1/LToeOffset1/LFootBind2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3/LFootGuide4/LFootBind1/LToeOffset1/LFootBind2/LToeOffset2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3/LFootGuide4/LFootBind1/LToeOffset1/LFootBind2/LToeOffset2/LFootBind3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3/LFootGuide4/LFootBind1/LToeOffset1/LFootBind2/LToeOffset2/LFootUpV3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotBase/LFootGuide1/LFootGuide2/LFootGuide3/LFootGuide4/LFootBind1/LToeOffset1/LFootUpV2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotLeft_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPivotRight_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/LeftFoot_NeutralPose/LeftFoot/LeftTip_NeutralPose/LeftTip/LPlacePivot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RFootUpV1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RightRoll_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RightRoll_NeutralPose/RightRoll
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3/RFootGuide4
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3/RFootGuide4/RFootBind1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3/RFootGuide4/RFootBind1/RToeOffset1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3/RFootGuide4/RFootBind1/RToeOffset1/RFootBind2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3/RFootGuide4/RFootBind1/RToeOffset1/RFootBind2/RToeOffset2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3/RFootGuide4/RFootBind1/RToeOffset1/RFootBind2/RToeOffset2/RFootBind3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3/RFootGuide4/RFootBind1/RToeOffset1/RFootBind2/RToeOffset2/RFootUpV3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotBase/RFootGuide1/RFootGuide2/RFootGuide3/RFootGuide4/RFootBind1/RToeOffset1/RFootUpV2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotLeft_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPivotRight_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/RightFoot_NeutralPose/RightFoot/RightTip_NeutralPose/RightTip/RPlacePivot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LlegUpV_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LlegUpV_NeutralPose/LlegUpV
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LThigh
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LThigh/LShin
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LThigh/LShin/LlegEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LThigh/LShin/LlegEff/LFootRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LThigh/LShin/LlegEff/LFootRoot/LFootBone1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LThigh/LShin/LlegEff/LFootRoot/LFootBone1/LFootBone2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LThigh/LShin/LlegEff/LFootRoot/LFootBone1/LFootBone2/LFootBone3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/LRoot1/LThigh/LShin/LlegEff/LFootRoot/LFootBone1/LFootBone2/LFootBone3/LFootEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RlegUpV_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RlegUpV_NeutralPose/RlegUpV
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RThigh
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RThigh/RShin
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RThigh/RShin/RlegEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RThigh/RShin/RlegEff/RFootRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RThigh/RShin/RlegEff/RFootRoot/RFootBone1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RThigh/RShin/RlegEff/RFootRoot/RFootBone1/RFootBone2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RThigh/RShin/RlegEff/RFootRoot/RFootBone1/RFootBone2/RFootBone3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/RRoot1/RThigh/RShin/RlegEff/RFootRoot/RFootBone1/RFootBone2/RFootBone3/RFootEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/HeadRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/HeadRoot/Neck_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/HeadRoot/Neck_ncl1_1/Head_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/HeadRoot/Neck_ncl1_1/Head_ncl1_1/HeadEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LArmUpV_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LArmUpV_NeutralPose/LArmUpV
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LHand_grab
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LHandEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LIndexRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LIndexRoot/LIndex1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LIndexRoot/LIndex1_NeutralPose/LIndex1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LIndexRoot/LIndex1_NeutralPose/LIndex1_ncl1_1/LIndex2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LIndexRoot/LIndex1_NeutralPose/LIndex1_ncl1_1/LIndex2_NeutralPose/LIndex2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LIndexRoot/LIndex1_NeutralPose/LIndex1_ncl1_1/LIndex2_NeutralPose/LIndex2_ncl1_1/LIndex3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LIndexRoot/LIndex1_NeutralPose/LIndex1_ncl1_1/LIndex2_NeutralPose/LIndex2_ncl1_1/LIndex3_NeutralPose/LIndex3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LIndexRoot/LIndex1_NeutralPose/LIndex1_ncl1_1/LIndex2_NeutralPose/LIndex2_ncl1_1/LIndex3_NeutralPose/LIndex3_ncl1_1/LIndexEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LMiddleRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LMiddleRoot/LMiddle1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LMiddleRoot/LMiddle1_NeutralPose/LMiddle1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LMiddleRoot/LMiddle1_NeutralPose/LMiddle1_ncl1_1/LMiddle2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LMiddleRoot/LMiddle1_NeutralPose/LMiddle1_ncl1_1/LMiddle2_NeutralPose/LMiddle2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LMiddleRoot/LMiddle1_NeutralPose/LMiddle1_ncl1_1/LMiddle2_NeutralPose/LMiddle2_ncl1_1/LMiddle3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LMiddleRoot/LMiddle1_NeutralPose/LMiddle1_ncl1_1/LMiddle2_NeutralPose/LMiddle2_ncl1_1/LMiddle3_NeutralPose/LMiddle3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LMiddleRoot/LMiddle1_NeutralPose/LMiddle1_ncl1_1/LMiddle2_NeutralPose/LMiddle2_ncl1_1/LMiddle3_NeutralPose/LMiddle3_ncl1_1/LMiddleEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LPinkyRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LPinkyRoot/LPinky1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LPinkyRoot/LPinky1_NeutralPose/LPinky1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LPinkyRoot/LPinky1_NeutralPose/LPinky1_ncl1_1/LPinky2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LPinkyRoot/LPinky1_NeutralPose/LPinky1_ncl1_1/LPinky2_NeutralPose/LPinky2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LPinkyRoot/LPinky1_NeutralPose/LPinky1_ncl1_1/LPinky2_NeutralPose/LPinky2_ncl1_1/LPinky3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LPinkyRoot/LPinky1_NeutralPose/LPinky1_ncl1_1/LPinky2_NeutralPose/LPinky2_ncl1_1/LPinky3_NeutralPose/LPinky3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LPinkyRoot/LPinky1_NeutralPose/LPinky1_ncl1_1/LPinky2_NeutralPose/LPinky2_ncl1_1/LPinky3_NeutralPose/LPinky3_ncl1_1/LPinkyEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LRingRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LRingRoot/LRing1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LRingRoot/LRing1_NeutralPose/LRing1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LRingRoot/LRing1_NeutralPose/LRing1_ncl1_1/LRing2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LRingRoot/LRing1_NeutralPose/LRing1_ncl1_1/LRing2_NeutralPose/LRing2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LRingRoot/LRing1_NeutralPose/LRing1_ncl1_1/LRing2_NeutralPose/LRing2_ncl1_1/LRing3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LRingRoot/LRing1_NeutralPose/LRing1_ncl1_1/LRing2_NeutralPose/LRing2_ncl1_1/LRing3_NeutralPose/LRing3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LRingRoot/LRing1_NeutralPose/LRing1_ncl1_1/LRing2_NeutralPose/LRing2_ncl1_1/LRing3_NeutralPose/LRing3_ncl1_1/LRingEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LThumbRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LThumbRoot/LThumb1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LThumbRoot/LThumb1_NeutralPose/LThumb1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LThumbRoot/LThumb1_NeutralPose/LThumb1_ncl1_1/LThumb2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LThumbRoot/LThumb1_NeutralPose/LThumb1_ncl1_1/LThumb2_NeutralPose/LThumb2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LThumbRoot/LThumb1_NeutralPose/LThumb1_ncl1_1/LThumb2_NeutralPose/LThumb2_ncl1_1/LThumb3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LThumbRoot/LThumb1_NeutralPose/LThumb1_ncl1_1/LThumb2_NeutralPose/LThumb2_ncl1_1/LThumb3_NeutralPose/LThumb3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/LShoulderRoot/LShoulder_ncl1_1/LShoulderEff/LRoot/LBicep/LForearm/LArmEff/LHandRoot/LHand_ncl1_1/LThumbRoot/LThumb1_NeutralPose/LThumb1_ncl1_1/LThumb2_NeutralPose/LThumb2_ncl1_1/LThumb3_NeutralPose/LThumb3_ncl1_1/LThumbEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RArmUpV_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RArmUpV_NeutralPose/RArmUpV
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RHand_grab
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RHandEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RIndexRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RIndexRoot/RIndex1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RIndexRoot/RIndex1_NeutralPose/RIndex1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RIndexRoot/RIndex1_NeutralPose/RIndex1_ncl1_1/RIndex2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RIndexRoot/RIndex1_NeutralPose/RIndex1_ncl1_1/RIndex2_NeutralPose/RIndex2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RIndexRoot/RIndex1_NeutralPose/RIndex1_ncl1_1/RIndex2_NeutralPose/RIndex2_ncl1_1/RIndex3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RIndexRoot/RIndex1_NeutralPose/RIndex1_ncl1_1/RIndex2_NeutralPose/RIndex2_ncl1_1/RIndex3_NeutralPose/RIndex3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RIndexRoot/RIndex1_NeutralPose/RIndex1_ncl1_1/RIndex2_NeutralPose/RIndex2_ncl1_1/RIndex3_NeutralPose/RIndex3_ncl1_1/RIndexEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RMiddleRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RMiddleRoot/RMiddle1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RMiddleRoot/RMiddle1_NeutralPose/RMiddle1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RMiddleRoot/RMiddle1_NeutralPose/RMiddle1_ncl1_1/RMiddle2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RMiddleRoot/RMiddle1_NeutralPose/RMiddle1_ncl1_1/RMiddle2_NeutralPose/RMiddle2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RMiddleRoot/RMiddle1_NeutralPose/RMiddle1_ncl1_1/RMiddle2_NeutralPose/RMiddle2_ncl1_1/RMiddle3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RMiddleRoot/RMiddle1_NeutralPose/RMiddle1_ncl1_1/RMiddle2_NeutralPose/RMiddle2_ncl1_1/RMiddle3_NeutralPose/RMiddle3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RMiddleRoot/RMiddle1_NeutralPose/RMiddle1_ncl1_1/RMiddle2_NeutralPose/RMiddle2_ncl1_1/RMiddle3_NeutralPose/RMiddle3_ncl1_1/RMiddleEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RPinkyRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RPinkyRoot/RPinky1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RPinkyRoot/RPinky1_NeutralPose/RPinky1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RPinkyRoot/RPinky1_NeutralPose/RPinky1_ncl1_1/RPinky2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RPinkyRoot/RPinky1_NeutralPose/RPinky1_ncl1_1/RPinky2_NeutralPose/RPinky2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RPinkyRoot/RPinky1_NeutralPose/RPinky1_ncl1_1/RPinky2_NeutralPose/RPinky2_ncl1_1/RPinky3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RPinkyRoot/RPinky1_NeutralPose/RPinky1_ncl1_1/RPinky2_NeutralPose/RPinky2_ncl1_1/RPinky3_NeutralPose/RPinky3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RPinkyRoot/RPinky1_NeutralPose/RPinky1_ncl1_1/RPinky2_NeutralPose/RPinky2_ncl1_1/RPinky3_NeutralPose/RPinky3_ncl1_1/RPinkyEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RRingRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RRingRoot/RRing1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RRingRoot/RRing1_NeutralPose/RRing1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RRingRoot/RRing1_NeutralPose/RRing1_ncl1_1/RRing2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RRingRoot/RRing1_NeutralPose/RRing1_ncl1_1/RRing2_NeutralPose/RRing2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RRingRoot/RRing1_NeutralPose/RRing1_ncl1_1/RRing2_NeutralPose/RRing2_ncl1_1/RRing3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RRingRoot/RRing1_NeutralPose/RRing1_ncl1_1/RRing2_NeutralPose/RRing2_ncl1_1/RRing3_NeutralPose/RRing3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RRingRoot/RRing1_NeutralPose/RRing1_ncl1_1/RRing2_NeutralPose/RRing2_ncl1_1/RRing3_NeutralPose/RRing3_ncl1_1/RRingEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RThumbRoot
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RThumbRoot/RThumb1_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RThumbRoot/RThumb1_NeutralPose/RThumb1_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RThumbRoot/RThumb1_NeutralPose/RThumb1_ncl1_1/RThumb2_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RThumbRoot/RThumb1_NeutralPose/RThumb1_ncl1_1/RThumb2_NeutralPose/RThumb2_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RThumbRoot/RThumb1_NeutralPose/RThumb1_ncl1_1/RThumb2_NeutralPose/RThumb2_ncl1_1/RThumb3_NeutralPose
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RThumbRoot/RThumb1_NeutralPose/RThumb1_ncl1_1/RThumb2_NeutralPose/RThumb2_ncl1_1/RThumb3_NeutralPose/RThumb3_ncl1_1
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineEff/Lumbar1/Lumbar2/Lumbar3/Lumbar4/SpineRoot/RShoulderRoot/RShoulder_ncl1_1/RShoulderEff/RRoot/RBicep/RForearm/RArmEff/RHandRoot/RHand_ncl1_1/RThumbRoot/RThumb1_NeutralPose/RThumb1_ncl1_1/RThumb2_NeutralPose/RThumb2_ncl1_1/RThumb3_NeutralPose/RThumb3_ncl1_1/RThumbEffector
+        weight: 1
+      - path: Biped:Biped/GlobalSRT_ncl1_1/UpperBody_NeutralPose/UpperBody/HipPlate/SpineStart
+        weight: 1
+      - path: Biped_Guide:Biped_Guide
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/cog
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist1/crvlist_Point1_ClsCtr1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist1/crvlist_Point_ClsCtr1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist2/crvlist_Point1_ClsCtr3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist2/crvlist_Point_ClsCtr3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist3/crvlist_Point1_ClsCtr4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist3/crvlist_Point_ClsCtr4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist4/crvlist_Point1_ClsCtr5
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist4/crvlist_Point_ClsCtr5
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist5
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist5/crvlist_Point1_ClsCtr6
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist5/crvlist_Point_ClsCtr6
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist6
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist6/crvlist_Point1_ClsCtr7
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist6/crvlist_Point_ClsCtr7
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist7
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist7/crvlist_Point1_ClsCtr8
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist7/crvlist_Point_ClsCtr8
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist8
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist8/crvlist_Point1_ClsCtr9
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist8/crvlist_Point_ClsCtr9
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9/crvlist_Point1_ClsCtr10
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9/crvlist_Point1_ClsCtr11
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9/crvlist_Point1_ClsCtr12
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9/crvlist_Point1_ClsCtr13
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9/crvlist_Point_ClsCtr10
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9/crvlist_Point_ClsCtr11
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9/crvlist_Point_ClsCtr12
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist9/crvlist_Point_ClsCtr13
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist10
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist11
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist12
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist17
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist17/crvlist_Point1_ClsCtr16
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist17/crvlist_Point2_ClsCtr1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist17/crvlist_Point3_ClsCtr1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist17/crvlist_Point4_ClsCtr
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/crvlist17/crvlist_Point_ClsCtr18
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/hipBone
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/hipCluster1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/hipCluster3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/hipCluster4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/hipCluster5
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LCalfCurve
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LForeArmCurve
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LHipBind
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LFoot1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LFoot1/LFoot2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LFoot1/LFoot2/LFoot3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LFoot1/LFoot2/LFoot3/LFoot4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LFoot1/LPivot
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LFoot1/LPivot/LPivotLeft
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LFoot1/LPivot/LPivotRight
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1/HingeLKnee2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1/HingeLKnee2/LCalfCenter
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1/HingeLKnee2/LCalfCenter/StretchBind25
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1/HingeLKnee2/LCalfCenter/StretchBind25/LCalfBack
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1/StretchBind22
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1/StretchBind22/LThighBack2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1/StretchBind23
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeform/HingeLKnee1/StretchBind23/LThighBack1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LKnee/LKneeDeformUpv
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LowerStomachParent
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LRear1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/LThighBind
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RArmPitBind
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RCalfCurve
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RForeArmCurve
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RHipBind
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RFoot1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RFoot1/RFoot2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RFoot1/RFoot2/RFoot3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RFoot1/RFoot2/RFoot3/RFoot4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RFoot1/RPivot
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RFoot1/RPivot/RPivotLeft
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RFoot1/RPivot/RPivotRight
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1/HingeRKnee2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1/HingeRKnee2/RCalfCenter
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1/HingeRKnee2/RCalfCenter/StretchBind35
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1/HingeRKnee2/RCalfCenter/StretchBind35/RCalfBack
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1/StretchBind33
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1/StretchBind33/RThighBack2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1/StretchBind34
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeform/HingeRKnee1/StretchBind34/RThighBack1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RKnee/RKneeDeformUpv
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root57
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root57/bone_
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root57/bone_/eff61
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root57/bone_/LHipBottom
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root57/bone_/LLowerThigh
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root58
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root58/bone_1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root58/bone_1/eff62
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root58/bone_1/RHipBottom
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root58/bone_1/RLowerThigh
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root59
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root59/bone_2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root59/bone_2/eff63
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root60
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root60/bone_3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/root60/bone_3/eff64
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/RThighBind
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_2/bone58
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_2/bone58/eff17
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_3/bone59
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_3/bone59/eff18
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_4/bone60
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_4/bone60/eff19
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_5
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_5/bone55
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_5/bone55/eff20
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_6
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_6/bone56
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_6/bone56/eff21
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_7
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_7/bone57
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_7/bone57/eff22
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_8
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_8/bone52
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_8/bone52/eff23
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_9
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_9/bone53
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_9/bone53/eff24
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_10
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_10/bone54
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_10/bone54/eff25
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_11
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_11/bone49
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_11/bone49/eff26
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_12
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_12/bone50
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_12/bone50/eff27
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_13
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_13/bone51
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_13/bone51/eff28
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_14
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_14/bone48
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_14/bone48/eff31
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_15
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_15/bone47
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_15/bone47/eff30
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_16
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_16/bone46
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/_16/bone46/eff29
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/BellyParent
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/BellyParent/UpperStomach
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/LHipTop
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/LLeg
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/LLeg/LBelly2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/LowerStomach
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RHipTop
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/LArmPitBase
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RArmPitBase
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2/HingeLElbow3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2/HingeLElbow3/LForeArmCenter
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2/HingeLElbow3/LForeArmCenter/StretchBind32
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2/HingeLElbow3/LForeArmCenter/StretchBind32/LForeArmSquash
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2/StretchBind30
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2/StretchBind30/LElbowJoint1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2/StretchBind31
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/HingeRElbow2/StretchBind31/LElbowJoint2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LElbowDeform1/LElbowDeformUpv
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LIndex1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LIndex1/FinBase1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LIndex1/FinBase1/LIndex_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LIndex1/FinUpVector1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LIndex1/LIndex2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LIndex1/LIndex2/LIndex3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LIndex1/LIndex2/LIndex3/LIndex4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LMiddle1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LMiddle1/FinBase2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LMiddle1/FinBase2/LMiddle_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LMiddle1/FinUpVector2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LMiddle1/LMiddle2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LMiddle1/LMiddle2/LMiddle3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LMiddle1/LMiddle2/LMiddle3/LMiddle4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LPinky1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LPinky1/FinBase4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LPinky1/FinBase4/LPinky_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LPinky1/FinUpVector4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LPinky1/LPinky2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LPinky1/LPinky2/LPinky3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LPinky1/LPinky2/LPinky3/LPinky4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LRing1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LRing1/FinBase3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LRing1/FinBase3/LRing_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LRing1/FinUpVector3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LRing1/LRing2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LRing1/LRing2/LRing3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LRing1/LRing2/LRing3/LRing4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LThumb1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LThumb1/FinBase
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LThumb1/FinBase/LThumb_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LThumb1/FinUpVector
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LThumb1/LThumb2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LThumb1/LThumb2/LThumb3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/LShoulderStart/LShoulder/LElbow/LHand/LHandEnd/LThumb1/LThumb2/LThumb3/LThumb4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1/crvlist13
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1/crvlist13/crvlist_Point1_ClsCtr14
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1/crvlist13/crvlist_Point_ClsCtr14
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1/LEar2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1/LEar2/LEar3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1/LEar2/LEar3/crvlist14
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1/LEar2/LEar3/crvlist14/crvlist_Point1_ClsCtr15
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/LEar1/LEar2/LEar3/crvlist14/crvlist_Point_ClsCtr15
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1/crvlist15
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1/crvlist15/crvlist15_Point2_ClsCtr
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1/crvlist15/crvlist_Point_ClsCtr16
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1/REar2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1/REar2/REar3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1/REar2/REar3/crvlist16
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1/REar2/REar3/crvlist16/crvlist16_Point4_ClsCtr
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/Neck/Head/REar1/REar2/REar3/crvlist16/crvlist_Point_ClsCtr17
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1/HingeLElbow2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1/HingeLElbow2/RForeArmCenter
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1/HingeLElbow2/RForeArmCenter/StretchBind29
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1/HingeLElbow2/RForeArmCenter/StretchBind29/RForeArmSquash
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1/StretchBind27
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1/StretchBind27/RElbowJoint1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1/StretchBind28
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/HingeRElbow1/StretchBind28/RElbowJoint2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RElbowDeform/RElbowDeformUpv
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RIndex1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RIndex1/FinBase6
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RIndex1/FinBase6/RIndex_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RIndex1/FinUpVector6
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RIndex1/RIndex2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RIndex1/RIndex2/RIndex3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RIndex1/RIndex2/RIndex3/RIndex4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RMiddle1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RMiddle1/FinBase7
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RMiddle1/FinBase7/RMiddle_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RMiddle1/FinUpVector7
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RMiddle1/RMiddle2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RMiddle1/RMiddle2/RMiddle3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RMiddle1/RMiddle2/RMiddle3/RMiddle4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RPinky1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RPinky1/FinBase9
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RPinky1/FinBase9/RPinky_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RPinky1/FinUpVector9
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RPinky1/RPinky2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RPinky1/RPinky2/RPinky3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RPinky1/RPinky2/RPinky3/RPinky4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RRing1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RRing1/FinBase8
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RRing1/FinBase8/RRing_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RRing1/FinUpVector8
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RRing1/RRing2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RRing1/RRing2/RRing3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RRing1/RRing2/RRing3/RRing4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RThumb1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RThumb1/FinBase5
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RThumb1/FinBase5/RThumb_fingerBlade
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RThumb1/FinUpVector5
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RThumb1/RThumb2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RThumb1/RThumb2/RThumb3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RibCageStart/RibCageEnd/RShoulderStart/RShoulder/RElbow/RHand/RHandEnd/RThumb1/RThumb2/RThumb3/RThumb4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RLeg
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RLeg/RBelly2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root/bone37
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root/bone37/eff
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root1/bone32
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root1/bone32/eff1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root2/bone31
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root2/bone31/eff2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root3/bone33
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root3/bone33/eff3
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root3/bone33/RArmPitTop
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root4/bone30
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root4/bone30/eff4
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root4/bone30/LArmPitTop
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root4/bone30/LArmPitTop/crvlist
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root4/bone30/LArmPitTop/crvlist/crvlist_Point1_ClsCtr2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root4/bone30/LArmPitTop/crvlist/crvlist_Point_ClsCtr2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root4/bone30/LArmPitTop/LArmPitBind
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root13
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root13/bone29
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root13/bone29/eff13
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root14
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root14/bone34
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root14/bone34/eff14
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root15
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root15/bone35
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root15/bone35/eff15
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root16
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root16/bone36
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root16/bone36/eff16
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root19
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root19/BRClawBone
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root19/BRClawBone/eff50
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root20
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root20/BRClawBone2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root20/BRClawBone2/eff49
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root32
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root32/bone
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root32/bone/eff32
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root33
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root33/bone15
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root33/bone15/eff33
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root34
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root34/bone16
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root34/bone16/eff34
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root35
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root35/bone19
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root35/bone19/eff35
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root36
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root36/bone18
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root36/bone18/eff36
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root37
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root37/bone17
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root37/bone17/eff37
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root38
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root38/bone20
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root38/bone20/eff38
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root39
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root39/bone21
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root39/bone21/eff39
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root40
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root40/bone22
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root40/bone22/eff40
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root41
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root41/bone23
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root41/bone23/eff41
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root42
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root42/bone24
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root42/bone24/eff42
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root43
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root43/bone25
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root43/bone25/eff43
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root44
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root44/bone26
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root44/bone26/eff44
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root45
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root45/bone27
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root45/bone27/eff45
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root46
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root46/bone28
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root46/bone28/eff46
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root47
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root47/bone62
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root47/bone62/eff47
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root48
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root48/bone63
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root48/bone63/eff48
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root50
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root50/BRClawBone1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root50/BRClawBone1/eff54
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root51
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root51/BLClawBone1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root51/BLClawBone1/eff55
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root55
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root55/BLClawBone
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root55/BLClawBone/eff59
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root56
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root56/BLClawBone2
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/root56/BLClawBone2/eff60
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/RRear1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/Spine1Parent
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/Spine1Parent/SpineChestDepth
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/Spine2Parent
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineBase/Spine2Parent/SpineHipDepth
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineSpline
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineSpline/crvlist_Point1_ClsCtr
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineSpline/crvlist_Point2_ClsCtr
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineSpline/crvlist_Point3_ClsCtr
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/SpineSpline/crvlist_Point_ClsCtr
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/StomachCenter
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/StomachCenter/LBelly1
+        weight: 1
+      - path: Biped_Guide:Biped_Guide/GlobalSRT/StomachCenter/RBelly1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1/LThigh_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1/LThigh_ncl1_1/LShin_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1/LThigh_ncl1_1/LShin_ncl1_1/eff18_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1/LThigh_ncl1_1/LShin_ncl1_1/eff18_ncl1_1/LFootRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1/LThigh_ncl1_1/LShin_ncl1_1/eff18_ncl1_1/LFootRoot_ncl1_1/LFootBone1_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1/LThigh_ncl1_1/LShin_ncl1_1/eff18_ncl1_1/LFootRoot_ncl1_1/LFootBone1_ncl1_1/LFootBone2_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1/LThigh_ncl1_1/LShin_ncl1_1/eff18_ncl1_1/LFootRoot_ncl1_1/LFootBone1_ncl1_1/LFootBone2_ncl1_1/LFootBone3_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/LRoot1_ncl1_1/LThigh_ncl1_1/LShin_ncl1_1/eff18_ncl1_1/LFootRoot_ncl1_1/LFootBone1_ncl1_1/LFootBone2_ncl1_1/LFootBone3_ncl1_1/eff20_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1/RThigh_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1/RThigh_ncl1_1/RShin_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1/RThigh_ncl1_1/RShin_ncl1_1/eff19_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1/RThigh_ncl1_1/RShin_ncl1_1/eff19_ncl1_1/RFootRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1/RThigh_ncl1_1/RShin_ncl1_1/eff19_ncl1_1/RFootRoot_ncl1_1/RFootBone1_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1/RThigh_ncl1_1/RShin_ncl1_1/eff19_ncl1_1/RFootRoot_ncl1_1/RFootBone1_ncl1_1/RFootBone2_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1/RThigh_ncl1_1/RShin_ncl1_1/eff19_ncl1_1/RFootRoot_ncl1_1/RFootBone1_ncl1_1/RFootBone2_ncl1_1/RFootBone3_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/RRoot1_ncl1_1/RThigh_ncl1_1/RShin_ncl1_1/eff19_ncl1_1/RFootRoot_ncl1_1/RFootBone1_ncl1_1/RFootBone2_ncl1_1/RFootBone3_ncl1_1/eff21_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2/Head_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2/Head_ncl1_2/eff3_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2/Head_ncl1_2/eff3_ncl1_1/root1_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2/Head_ncl1_2/eff3_ncl1_1/root1_ncl1_1/bone1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2/Head_ncl1_2/eff3_ncl1_1/root1_ncl1_1/bone1/eff23_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2/Head_ncl1_2/eff3_ncl1_1/root_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2/Head_ncl1_2/eff3_ncl1_1/root_ncl1_1/bone_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/HeadRoot_ncl1_1/Neck_ncl1_2/Head_ncl1_2/eff3_ncl1_1/root_ncl1_1/bone_ncl1_1/eff22_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LIndexRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LIndexRoot_ncl1_1/LIndex1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LIndexRoot_ncl1_1/LIndex1_ncl1_2/LIndex2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LIndexRoot_ncl1_1/LIndex1_ncl1_2/LIndex2_ncl1_2/LIndex3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LIndexRoot_ncl1_1/LIndex1_ncl1_2/LIndex2_ncl1_2/LIndex3_ncl1_2/eff8
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LMiddleRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LMiddleRoot_ncl1_1/LMiddle1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LMiddleRoot_ncl1_1/LMiddle1_ncl1_2/LMiddle2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LMiddleRoot_ncl1_1/LMiddle1_ncl1_2/LMiddle2_ncl1_2/LMiddle3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LMiddleRoot_ncl1_1/LMiddle1_ncl1_2/LMiddle2_ncl1_2/LMiddle3_ncl1_2/eff7
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LPinkyRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LPinkyRoot_ncl1_1/LPinky1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LPinkyRoot_ncl1_1/LPinky1_ncl1_2/LPinky2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LPinkyRoot_ncl1_1/LPinky1_ncl1_2/LPinky2_ncl1_2/LPinky3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LPinkyRoot_ncl1_1/LPinky1_ncl1_2/LPinky2_ncl1_2/LPinky3_ncl1_2/eff5
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LRingRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LRingRoot_ncl1_1/LRing1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LRingRoot_ncl1_1/LRing1_ncl1_2/LRing2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LRingRoot_ncl1_1/LRing1_ncl1_2/LRing2_ncl1_2/LRing3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LRingRoot_ncl1_1/LRing1_ncl1_2/LRing2_ncl1_2/LRing3_ncl1_2/eff6
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LThumbRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LThumbRoot_ncl1_1/LThumb1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LThumbRoot_ncl1_1/LThumb1_ncl1_2/LThumb2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LThumbRoot_ncl1_1/LThumb1_ncl1_2/LThumb2_ncl1_2/LThumb3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/LShoulderRoot_ncl1_1/LShoulder_ncl1_2/eff2_ncl1_1/LRoot_ncl1_1/LBicep_ncl1_1/LForearm_ncl1_1/eff17_ncl1_1/LHandRoot_ncl1_1/LHand_ncl1_2/eff4_ncl1_1/LThumbRoot_ncl1_1/LThumb1_ncl1_2/LThumb2_ncl1_2/LThumb3_ncl1_2/eff9
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RIndexRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RIndexRoot_ncl1_1/RIndex1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RIndexRoot_ncl1_1/RIndex1_ncl1_2/RIndex2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RIndexRoot_ncl1_1/RIndex1_ncl1_2/RIndex2_ncl1_2/RIndex3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RIndexRoot_ncl1_1/RIndex1_ncl1_2/RIndex2_ncl1_2/RIndex3_ncl1_2/eff14_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RMiddleRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RMiddleRoot_ncl1_1/RMiddle1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RMiddleRoot_ncl1_1/RMiddle1_ncl1_2/RMiddle2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RMiddleRoot_ncl1_1/RMiddle1_ncl1_2/RMiddle2_ncl1_2/RMiddle3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RMiddleRoot_ncl1_1/RMiddle1_ncl1_2/RMiddle2_ncl1_2/RMiddle3_ncl1_2/eff13_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RPinkyRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RPinkyRoot_ncl1_1/RPinky1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RPinkyRoot_ncl1_1/RPinky1_ncl1_2/RPinky2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RPinkyRoot_ncl1_1/RPinky1_ncl1_2/RPinky2_ncl1_2/RPinky3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RPinkyRoot_ncl1_1/RPinky1_ncl1_2/RPinky2_ncl1_2/RPinky3_ncl1_2/eff11
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RRingRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RRingRoot_ncl1_1/RRing1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RRingRoot_ncl1_1/RRing1_ncl1_2/RRing2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RRingRoot_ncl1_1/RRing1_ncl1_2/RRing2_ncl1_2/RRing3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RRingRoot_ncl1_1/RRing1_ncl1_2/RRing2_ncl1_2/RRing3_ncl1_2/eff12
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RThumbRoot_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RThumbRoot_ncl1_1/RThumb1_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RThumbRoot_ncl1_1/RThumb1_ncl1_2/RThumb2_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RThumbRoot_ncl1_1/RThumb1_ncl1_2/RThumb2_ncl1_2/RThumb3_ncl1_2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/RHandRoot_ncl1_1/RHand_ncl1_2/eff10/RThumbRoot_ncl1_1/RThumb1_ncl1_2/RThumb2_ncl1_2/RThumb3_ncl1_2/eff15_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/bone6
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/bone6/bone7
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/bone6/bone7/eff24_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root2_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root2_ncl1_1/bone3
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root2_ncl1_1/bone3/eff27_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root3_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root3_ncl1_1/bone4
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root3_ncl1_1/bone4/eff26_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root4_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root4_ncl1_1/bone5
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root4_ncl1_1/bone5/eff25_ncl1_1
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root6
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root6/bone2
+        weight: 1
+      - path: Biped_Shadow:Biped_Shadow/GlobalSRT_ncl1_2/UpperBody_ncl1_1/SpineEff_ncl1_1/Lumbar1_ncl1_1/Lumbar2_ncl1_1/Lumbar3_ncl1_1/Lumbar4_ncl1_1/eff_ncl1_1/RShoulderRoot_ncl1_1/RShoulder_ncl1_2/eff1_ncl1_1/RRoot_ncl1_1/RBicep_ncl1_1/RForearm_ncl1_1/eff16_ncl1_1/root5/root6/bone2/eff28_ncl1_1
+        weight: 1
+      - path: D_CH_002_Tochter_Malina:Group6
+        weight: 1
+      - path: Group1
+        weight: 1
+      - path: Group19578
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

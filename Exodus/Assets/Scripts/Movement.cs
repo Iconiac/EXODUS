@@ -44,12 +44,13 @@ public class Movement : MonoBehaviour
 
     void Animating(float h, float v)
     {
-        while (_agent.isActiveAndEnabled)
-        {
             bool walking = h != 0f || v != 0f;
             bool sneaking = Input.GetButton("Stealth");
+        if(_agent.enabled == false)
+        {
+            walking = false;
+        }
             _anim.SetBool("IsWalking", walking);
             _anim.SetBool("IsSneaking", sneaking);
-        }
     }
 }

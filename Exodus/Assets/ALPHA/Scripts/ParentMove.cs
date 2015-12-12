@@ -24,9 +24,10 @@ public class ParentMove : MonoBehaviour
 		else
 		{
 			target = this.transform.position;
+            _anim.SetTrigger("Idle");
 		}
 
-		agent.updateRotation = false;
+		agent.updateRotation = true;
 		agent.updatePosition = true;
 	}
 	

@@ -4,7 +4,7 @@ using System.Collections;
 	public class QuestComplete : MonoBehaviour
 	{
 
-		[Range(0.0f, 5.0f)][SerializeField] float killDistance;
+		[SerializeField] float killDistance;
 
 		private GameObject _parent;
 
@@ -17,6 +17,7 @@ using System.Collections;
 
 		void Update()
 		{
+
 			if (_parent != null)
 			{
 			if (Vector3.Distance(_parent.transform.position, transform.position) <= killDistance)
@@ -33,6 +34,7 @@ using System.Collections;
 				if (_parent != null)
 				{
 				_parent.GetComponent<ParentMove>().target = gameObject.transform.position;
+                _parent.GetComponent<Animator>().SetTrigger("Walking");
 				}
 			}
 		}

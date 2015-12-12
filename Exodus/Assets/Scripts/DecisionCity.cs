@@ -28,21 +28,21 @@ public class DecisionCity : MonoBehaviour
 			}	
 		}
 		
-		if (col.gameObject.name == "Screen2Border")
-		{
-			if (_momChosen == true)
-			{
-				Mom.SetActive(true);
-				//Mom.GetComponent<QuestController>().questTarget.SetActive(true);
-			}
+		//if (col.gameObject.name == "Screen2Border")
+		//{
+		//	if (_momChosen == true)
+		//	{
+		//		Mom.SetActive(true);
+		//		//Mom.GetComponent<QuestController>().questTarget.SetActive(true);
+		//	}
 			
-			if (_dadChosen == true)
-			{
-				Dad.SetActive(true);
-				//Dad.GetComponent<QuestController>().questTarget.SetActive(true);
-			}
+		//	if (_dadChosen == true)
+		//	{
+		//		Dad.SetActive(true);
+		//		//Dad.GetComponent<QuestController>().questTarget.SetActive(true);
+		//	}
 
-		}
+		//}
 		
 	}
 }

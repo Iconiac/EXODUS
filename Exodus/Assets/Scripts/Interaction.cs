@@ -5,9 +5,7 @@ using System.Collections;
 public class Interaction : MonoBehaviour
 {
     [SerializeField] GameObject DialogePanel;
-    [SerializeField] Text Dialoge;
     [SerializeField] float Interval;
-    [SerializeField] string TextToShow;
 
     void OnTriggerStay(Collider col)
     {

@@ -5,6 +5,8 @@ using System.Collections;
 	{
 		public NavMeshAgent agent { get; private set; }
 
+//        Animator anim;
+
 		private void Start()
 		{
 			agent = GetComponentInChildren<NavMeshAgent>();
@@ -24,6 +26,7 @@ using System.Collections;
 					agent.destination = hit.point;
 				}
 
+//                anim.SetBool("IsWalking", true);
 			}
 			
 		}

@@ -2,8 +2,6 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-namespace UnityStandardAssets.Characters.ThirdPerson
-{
 	public class SeePlayer : MonoBehaviour 
 	{
 		[SerializeField] float FieldOfViewAngle = 110f;           
@@ -19,7 +17,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] GameObject CameraToDeactivate;
         [SerializeField] GameObject Player;
 
-        private bool _playerInSight;
+        public bool PlayerInSight;
+
         private Vector3 _startPosition;
         private int _cur = 0;
         private int _index;
@@ -47,7 +46,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                         if (_hit.collider.gameObject == player)
                         {
                             LoseGame();
-                            _playerInSight = true;
+                            PlayerInSight = true;
                         }
                     }
                 }
@@ -57,7 +56,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		void FixedUpdate()
 		{
 	
-			if (_playerInSight == false)
+			if (PlayerInSight == false)
 			{
 				if (transform.position != Waypoints [_cur].position) 
 				{
@@ -104,7 +103,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void Respawn()
 		{
-			_playerInSight = false;
+			PlayerInSight = false;
 			CameraToActivate.SetActive(true);
 			CameraToDeactivate.SetActive(false);
 			InGameText.text = "Soll ich Ihren Teddy holen oder weitergehen?";
@@ -118,4 +117,4 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         }
 
 	}
-}
+

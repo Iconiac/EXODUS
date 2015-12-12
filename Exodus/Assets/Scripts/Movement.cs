@@ -7,13 +7,12 @@ public class Movement : MonoBehaviour
 
     private NavMeshAgent _agent;
     private GameObject _cam;
-
-    Animator anim;
+    private Animator _anim;
 
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
-        anim = GetComponent<Animator>();
+        _anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -45,13 +44,12 @@ public class Movement : MonoBehaviour
 
     void Animating(float h, float v)
     {
-        bool walking = h != 0f || v != 0f;
-        anim.SetBool("IsWalking", walking);
-
-        if (Input.GetButton("Stealth"))
+        while (_agent.isActiveAndEnabled)
         {
-            bool sneaking = h != 0f || v != 0f;
-            anim.SetBool("IsSneaking", sneaking);
+            bool walking = h != 0f || v != 0f;
+            bool sneaking = Input.GetButton("Stealth");
+            _anim.SetBool("IsWalking", walking);
+            _anim.SetBool("IsSneaking", sneaking);
         }
     }
 }

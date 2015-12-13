@@ -6,6 +6,7 @@ public class SisterMovement : MonoBehaviour
 	public NavMeshAgent agent { get; private set; }
 
     private Animator _anim;
+    private AudioSource _audio;
     public bool Walking;
       
 
@@ -13,6 +14,7 @@ public class SisterMovement : MonoBehaviour
 
 	private void Start()
 	{
+        _audio = GetComponent<AudioSource>();
 		agent = GetComponentInChildren<NavMeshAgent>();
 		agent.updateRotation = true;
 		agent.updatePosition = true;
@@ -36,6 +38,10 @@ public class SisterMovement : MonoBehaviour
         if (agent.remainingDistance >= agent.stoppingDistance)
         {
             Walking = true;
+            if (!_audio.isPlaying)
+            {
+                _audio.Play();
+            }
         }
 
         if (agent.remainingDistance <= agent.stoppingDistance)

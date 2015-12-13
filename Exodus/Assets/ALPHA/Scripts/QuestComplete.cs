@@ -5,6 +5,8 @@ using System.Collections;
 	{
 
 		[SerializeField] float killDistance;
+        [SerializeField] AudioSource GunShot;
+        [SerializeField] AudioSource Fence;
 
 		private GameObject _parent;
 
@@ -22,6 +24,7 @@ using System.Collections;
 			{
 			if (Vector3.Distance(_parent.transform.position, transform.position) <= killDistance)
 			{
+                GunShot.Play();
 				Destroy(_parent);
 			}
 			}
@@ -33,6 +36,7 @@ using System.Collections;
 			{
 				if (_parent != null)
 				{
+                Fence.Play();
 				_parent.GetComponent<ParentMove>().target = gameObject.transform.position;
                 _parent.GetComponent<Animator>().SetTrigger("Walking");
 				}

@@ -88,7 +88,7 @@ using UnityEngine.UI;
 
         if (gameObject.tag == "Enemy")
         {
-            Invoke("Restart", 4f);
+            StartCoroutine("Restart");
         }
 
         else if (gameObject.tag == "Spotlight")
@@ -97,8 +97,11 @@ using UnityEngine.UI;
 			}
 		}
 
-    void Restart()
+   IEnumerator Restart()
     {
+        yield return new WaitForSeconds(3f);
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(1f);
         Application.LoadLevel("City_Scene");
     }
 

@@ -6,7 +6,7 @@ public class SisterMovement : MonoBehaviour
 	public NavMeshAgent agent { get; private set; }
 
     private Animator _anim;
-    private bool _walking;
+    public bool Walking;
       
 
 //       Animator anim;
@@ -29,21 +29,20 @@ public class SisterMovement : MonoBehaviour
 			if (Physics.Raycast(ray, out hit, Mathf.Infinity))
 			{
 				agent.destination = hit.point;
-                Debug.Log(agent.destination);    
 			}
 
             //               anim.SetBool("IsWalking", true);
         }
         if (agent.remainingDistance >= agent.stoppingDistance)
         {
-            _walking = true;
+            Walking = true;
         }
 
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
-            _walking = false;
+            Walking = false;
         }
-        _anim.SetBool("IsWalking", _walking);
+        _anim.SetBool("IsWalking", Walking);
 
     }
 }

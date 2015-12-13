@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = true;
         _agent = GetComponent<NavMeshAgent>();
         _anim = GetComponent<Animator>();
     }

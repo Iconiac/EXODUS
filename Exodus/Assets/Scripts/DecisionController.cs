@@ -10,13 +10,13 @@ public class DecisionController : MonoBehaviour
 
     void Start()
     {
-        if (DecisionCity._momChosen == true)
+        if (Decisions.MomChosen == true)
         {
             Mom.SetActive(true);
             MomToolBox.SetActive(true);
         }
 
-        if (DecisionCity._dadChosen == true)
+        if (Decisions.DadChosen == true)
         {
             Dad.SetActive(true);
             DadToolBox.SetActive(true);

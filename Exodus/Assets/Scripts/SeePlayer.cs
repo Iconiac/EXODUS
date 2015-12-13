@@ -8,6 +8,7 @@ using UnityEngine.UI;
 		[SerializeField] float Speed = 0.07f;
         [SerializeField] float ViewDistance;
         [SerializeField] string[] Discovery;
+        [SerializeField] string RespawnText;
 		[SerializeField] bool ShouldRotate;
         [SerializeField] Text InGameText;
 		[SerializeField] Transform[] Waypoints;
@@ -85,28 +86,28 @@ using UnityEngine.UI;
                 _player.GetComponent<NavMeshAgent>().enabled = false;
             }
 
-			if (gameObject.tag == "Enemy")
-			{
-				Invoke ("Restart", 4f);
-			}
+        if (gameObject.tag == "Enemy")
+        {
+            Invoke("Restart", 4f);
+        }
 
-			else if (gameObject.tag == "Spotlight")
+        else if (gameObject.tag == "Spotlight")
 			{
 				Invoke ("Respawn", 4f);
 			}
 		}
-	
-		void Restart()
-		{
-			Application.LoadLevel("City_Scene");
-		}
 
-		void Respawn()
+    void Restart()
+    {
+        Application.LoadLevel("City_Scene");
+    }
+
+    void Respawn()
 		{
 			PlayerInSight = false;
 			CameraToActivate.SetActive(true);
 			CameraToDeactivate.SetActive(false);
-			InGameText.text = "Soll ich Ihren Teddy holen oder weitergehen?";
+			InGameText.text = "" + RespawnText;
             foreach (GameObject _player in _players)
             {
                 _player.GetComponent<NavMeshAgent>().enabled = true;

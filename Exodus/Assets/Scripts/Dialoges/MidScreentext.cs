@@ -8,6 +8,7 @@ public class MidScreentext : MonoBehaviour
     [SerializeField] GameObject Teddy;
     [SerializeField] Text InGameText;
     [SerializeField] string TextToShow;
+	[SerializeField] AudioSource SoundToPlay;
 
     void OnTriggerEnter(Collider col)
     {
@@ -17,6 +18,7 @@ public class MidScreentext : MonoBehaviour
             {
                 Teddy.SetActive(true);
             }
+			SoundToPlay.Play();
             DialogePanel.SetActive(true);
             InGameText.text = "" + TextToShow;
             Invoke("DisablePanel", 4f);

@@ -6,7 +6,7 @@ public class LoadMenu : MonoBehaviour {
 	
 	void Start ()
     {
-        Invoke("Menu", 33f);
+        Invoke("Menu", 104f);
 	}
 	
     void Menu()

@@ -7,6 +7,8 @@ public class Interaction : MonoBehaviour
     [SerializeField] GameObject DialogePanel;
     [SerializeField] GameObject Teddy;
     [SerializeField] float Interval;
+	[SerializeField] string TextToShow;
+	[SerializeField] Text InGameText;
 
     private GameObject _player;
     private GameObject _sister;
@@ -17,29 +19,40 @@ public class Interaction : MonoBehaviour
         _sister = GameObject.Find("LilSister");
     }
 
-    void OnTriggerStay(Collider col)
+    void OnTriggerEnter (Collider col)
     {
         if(col.gameObject.CompareTag("Player"))
         {
+			if (gameObject.tag == "QuestParent")
+			{
+				StartCoroutine("Questing");
+				Invoke("DisablePanel", Interval);
+				DialogePanel.SetActive(true);
+			}
+
+		}
+	}
+	void OnTriggerStay (Collider col)
+	{
+		if (col.gameObject.CompareTag("Player"))
+		{
             if (Input.GetButtonDown("Interact"))
             {
                 if (gameObject.CompareTag("Teddy"))
                 {
-                    Teddy.SetActive(true);
+					DialogePanel.SetActive(true);
+					InGameText.text = "" + TextToShow;
+					Invoke ("DisablePanel", 4f);
+					gameObject.SetActive(false);
+
                 }
                 DialogePanel.SetActive(true);
-
-                if (gameObject.tag != "Owner")
-                {
-                    StartCoroutine("Questing");
-                    Invoke("DisablePanel", Interval);
-                }
 
                 if (gameObject.tag == "Owner")
                 {
                     StartCoroutine("PauseGame");
-                }
-               
+					DialogePanel.SetActive (true);
+                }              
             }
         }
     }

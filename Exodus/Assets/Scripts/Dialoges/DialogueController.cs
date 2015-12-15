@@ -6,45 +6,32 @@ public class DialogueController : MonoBehaviour
 {
 	[SerializeField] string BeforeQuest;
 	[SerializeField] string QuestEnding;
-	[SerializeField] string StoryText;
-	[SerializeField] string UniquePlayerText;
     [SerializeField] Text _displayQuest;
+	[SerializeField] AudioSource BeginningSound;
+	[SerializeField] AudioSource EndSound;
 
     public string DuringQuest;
 	
-		
-	
-		void Awake()
-		{
-	
-			if (UniquePlayerText != "")
-			{
-				_displayQuest.text = "" + UniquePlayerText;
-			}
-		}
-	
+
 		public void ShowDialogue()
 		{
             
 			if (GetComponent<QuestController>().QuestCompleted == false && GetComponent<QuestController>().QuestActive == false)
 			{ 
 				_displayQuest.text = "" + BeforeQuest;
+			BeginningSound.Play ();
 			}
 	
-			if(GetComponent<QuestController>().QuestActive == true)
+			if(GetComponent<QuestController>().QuestActive == true && GetComponent<QuestController>().QuestCompleted == false)
 			{
 				_displayQuest.text = "" + DuringQuest;
+			BeginningSound.Play();
 			}
 			if (GetComponent<QuestController>().QuestCompleted == true)
 			{
 				_displayQuest.text = "" + QuestEnding;
+			EndSound.Play ();
 			}
-		}
-	
-		public void Story()
-		{
-			_displayQuest.text = "" + StoryText;
-			Invoke ("ResetText", 4f);
 		}
 	
 		void ResetText()

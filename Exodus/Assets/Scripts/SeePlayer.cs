@@ -93,7 +93,7 @@ using UnityEngine.UI;
 
         else if (gameObject.tag == "Spotlight")
 			{
-				Invoke ("Respawn", 4f);
+				StartCoroutine ("Respawn");
 			}
 		}
 
@@ -105,18 +105,23 @@ using UnityEngine.UI;
         Application.LoadLevel("City_Scene");
     }
 
-    void Respawn()
+    IEnumerator Respawn()
 		{
-			PlayerInSight = false;
+		yield return new WaitForSeconds (4f);
+			//PlayerInSight = false;
 			CameraToActivate.SetActive(true);
 			CameraToDeactivate.SetActive(false);
 			InGameText.text = "" + RespawnText;
-            foreach (GameObject _player in _players)
-            {
-                _player.GetComponent<NavMeshAgent>().enabled = true;
-            }
-            Player.GetComponent<NavMeshAgent>().Warp(Checkpoint.transform.position);
+		foreach (GameObject _player in _players)
+		{
+			_player.GetComponent<NavMeshAgent>().enabled = true;
+		}
+		Player.GetComponent<NavMeshAgent>().Warp(Checkpoint.transform.position);
+		yield return new WaitForSeconds (2f);
+		DialogePanel.SetActive(false);
+
             gameObject.transform.position = _startPosition;
+		PlayerInSight = false;
             gameObject.SetActive(false);
         }
 

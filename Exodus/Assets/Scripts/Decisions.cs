@@ -7,5 +7,6 @@ public static class Decisions
     public static bool BrotherChosen;
     public static bool MomChosen;
     public static bool DadChosen;
+	public static bool TeddyTaken;
 
 }

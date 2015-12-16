@@ -63,6 +63,7 @@ using UnityEngine.UI;
 				{
 					Vector3 p = Vector3.MoveTowards (transform.position, Waypoints [_cur].position, Speed);
 					GetComponent<Rigidbody> ().MovePosition (p);
+				Debug.Log(Waypoints[_cur]);
 				
 					if (ShouldRotate == true)
 					{
@@ -108,6 +109,7 @@ using UnityEngine.UI;
     IEnumerator Respawn()
 		{
 		yield return new WaitForSeconds (4f);
+		Decisions.TeddyTaken = false;
 			//PlayerInSight = false;
 			CameraToActivate.SetActive(true);
 			CameraToDeactivate.SetActive(false);
@@ -122,6 +124,7 @@ using UnityEngine.UI;
 
             gameObject.transform.position = _startPosition;
 		PlayerInSight = false;
+		_cur = 0;
             gameObject.SetActive(false);
         }
 

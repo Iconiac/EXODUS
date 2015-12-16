@@ -41,6 +41,7 @@ public class Interaction : MonoBehaviour
                 if (gameObject.CompareTag("Teddy"))
                 {
 					DialogePanel.SetActive(true);
+					Decisions.TeddyTaken = true;
 					InGameText.text = "" + TextToShow;
 					Invoke ("DisablePanel", 4f);
 					gameObject.SetActive(false);

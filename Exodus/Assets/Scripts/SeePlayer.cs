@@ -17,20 +17,26 @@ using UnityEngine.UI;
 		[SerializeField] GameObject CameraToActivate;
 		[SerializeField] GameObject CameraToDeactivate;
         [SerializeField] GameObject Player;
+        [SerializeField] GameObject BloodSplatter;
 
         public bool PlayerInSight;
 
         private Vector3 _startPosition;
+    private Vector3 _sisterCheckpoint;
         private int _cur = 0;
         private int _index;
+        private bool _bloodSpawned;
 		private RaycastHit _hit;
         private GameObject[] _players;
+        private GameObject _sister;
 		
 		void Awake()
 		{
             _players = GameObject.FindGameObjectsWithTag("Player");
+            _sister = GameObject.Find("LilSister");
             _index = Random.Range(0, Discovery.Length);
             _startPosition = gameObject.transform.position;
+        _sisterCheckpoint = new Vector3(Checkpoint.transform.position.x - 4, Checkpoint.transform.position.y, Checkpoint.transform.position.z);
 		}
 
 	void Update()
@@ -63,7 +69,6 @@ using UnityEngine.UI;
 				{
 					Vector3 p = Vector3.MoveTowards (transform.position, Waypoints [_cur].position, Speed);
 					GetComponent<Rigidbody> ().MovePosition (p);
-				Debug.Log(Waypoints[_cur]);
 				
 					if (ShouldRotate == true)
 					{
@@ -106,27 +111,39 @@ using UnityEngine.UI;
         Application.LoadLevel("City_Scene");
     }
 
-    IEnumerator Respawn()
-		{
-		yield return new WaitForSeconds (4f);
-		Decisions.TeddyTaken = false;
-			//PlayerInSight = false;
-			CameraToActivate.SetActive(true);
-			CameraToDeactivate.SetActive(false);
-			InGameText.text = "" + RespawnText;
-		foreach (GameObject _player in _players)
-		{
-			_player.GetComponent<NavMeshAgent>().enabled = true;
-		}
-		Player.GetComponent<NavMeshAgent>().Warp(Checkpoint.transform.position);
-		yield return new WaitForSeconds (2f);
-		DialogePanel.SetActive(false);
+   IEnumerator Respawn()
+	{
+	    yield return new WaitForSeconds (4f);
 
-            gameObject.transform.position = _startPosition;
-		PlayerInSight = false;
-		_cur = 0;
-            gameObject.SetActive(false);
+        if(!_bloodSpawned)
+        {
+            Vector3 PlayerFeet = new Vector3 (Player.transform.position.x, Player.transform.position.y - 1.3f, Player.transform.position.z);
+            Instantiate(BloodSplatter, PlayerFeet, BloodSplatter.transform.rotation);
+            _bloodSpawned = true;
         }
+        yield return new WaitForSeconds(0.5f);
+	    Decisions.TeddyTaken = false;
+		//PlayerInSight = false;
+		CameraToActivate.SetActive(true);
+		CameraToDeactivate.SetActive(false);
+		InGameText.text = "" + RespawnText;
+
+	    foreach (GameObject _player in _players)
+	    {
+	    	_player.GetComponent<NavMeshAgent>().enabled = true;
+        }
+
+	    Player.GetComponent<NavMeshAgent>().Warp(Checkpoint.transform.position);
+        _sister.GetComponent<NavMeshAgent>().Warp(_sisterCheckpoint);
+        
+	    yield return new WaitForSeconds (2f);
+	    DialogePanel.SetActive(false);
+        gameObject.transform.position = _startPosition;
+	    PlayerInSight = false;
+	    _cur = 0;
+        _bloodSpawned = false;
+        gameObject.SetActive(false);
+       }
 
 	}
 

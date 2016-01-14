@@ -6,6 +6,9 @@ public class Interaction : MonoBehaviour
 {
     [SerializeField] GameObject DialogePanel;
     [SerializeField] GameObject Teddy;
+    [SerializeField] GameObject GarageLight;
+    [SerializeField] GameObject FenceLight;
+    [SerializeField] GameObject FenceTrigger;
     [SerializeField] float Interval;
 	[SerializeField] string TextToShow;
 	[SerializeField] Text InGameText;
@@ -25,6 +28,17 @@ public class Interaction : MonoBehaviour
         {
 			if (gameObject.tag == "QuestParent")
 			{
+                if (!GetComponent<QuestController>().QuestCompleted)
+                {
+                    GarageLight.SetActive(true);
+                }
+
+                if(GetComponent<QuestController>().QuestCompleted)
+                {
+                    GarageLight.SetActive(false);
+                    FenceLight.SetActive(true);
+                    FenceTrigger.SetActive(true);
+                }
 				StartCoroutine("Questing");
 				Invoke("DisablePanel", Interval);
 				DialogePanel.SetActive(true);
@@ -36,8 +50,6 @@ public class Interaction : MonoBehaviour
 	{
 		if (col.gameObject.CompareTag("Player"))
 		{
-            if (Input.GetButtonDown("Interact"))
-            {
                 if (gameObject.CompareTag("Teddy"))
                 {
 					DialogePanel.SetActive(true);
@@ -54,7 +66,6 @@ public class Interaction : MonoBehaviour
                     StartCoroutine("PauseGame");
 					DialogePanel.SetActive (true);
                 }              
-            }
         }
     }
 

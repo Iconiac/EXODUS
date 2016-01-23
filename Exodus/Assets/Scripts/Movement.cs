@@ -24,7 +24,8 @@ public class Movement : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        if (_agent.isOnNavMesh)
+        if (_agent.isOnNavMesh && 
+            (h != 0 || v != 0))
         {
             if (h != 0)
             {
@@ -45,26 +46,35 @@ public class Movement : MonoBehaviour
                 }
                 transform.forward = _cam.transform.TransformDirection(new Vector3(h, 0f, v));
             }
+
+            _agent.updatePosition = true;
         }
+        else
+        {
+            _agent.updatePosition = false;
+        }
+        
+        Animating(h, v);
 
         /*  if (Input.GetButton("Interact"))
         {
             anim.SetTrigger("Interact", interactOn);
         }
         */
-        Animating(h, v);
     }
 
     void Animating(float h, float v)
     {
-            bool walking = h != 0f || v != 0f;
-            bool sneaking = Input.GetButton("Stealth");
+        bool walking = h != 0f || v != 0f;
+        bool sneaking = Input.GetButton("Stealth");
+
         if(_agent.enabled == false)
         {
             walking = false;
         }
-            _anim.SetBool("IsWalking", walking);
-            _anim.SetBool("IsSneaking", sneaking);
+
+        _anim.SetBool("IsWalking", walking);
+        _anim.SetBool("IsSneaking", sneaking);
     }
 
     //called by ScreenChange

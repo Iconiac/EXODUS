@@ -42,6 +42,7 @@ public class Interaction : MonoBehaviour
                     FenceTrigger.SetActive(true);
 					_collider.enabled = false;
                 }
+
 				StartCoroutine("Questing");
 				Invoke("DisablePanel", Interval);
 				DialogePanel.SetActive(true);

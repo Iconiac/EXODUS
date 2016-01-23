@@ -24,6 +24,7 @@ using UnityEngine.UI;
         private NavMeshAgent _playerAgent;
         private Vector3 _playerPosition;
         private Vector3 _sisterPosition;
+        private Movement _playerMovement;
 
 		void Awake()
 		{
@@ -33,6 +34,7 @@ using UnityEngine.UI;
             _playerAgent = _player.GetComponent<NavMeshAgent>();
             _sisterPosition = new Vector3(PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z - 2);
             _playerPosition = new Vector3(PositionToSpawnAt.transform.position.x, PositionToSpawnAt.transform.position.y, PositionToSpawnAt.transform.position.z);
+            _playerMovement = _player.GetComponent<Movement>();
 
         }
 			
@@ -44,6 +46,8 @@ using UnityEngine.UI;
 				{
 					CameraToActivate.SetActive(true);
                     CameraToDeactivate.SetActive(false);
+                    //Set next cam for movement directions
+                    _playerMovement.SetCam(CameraToActivate);
                     _playerAgent.Warp(_playerPosition);
 
 					if (ShouldSisterStay == false)

@@ -16,33 +16,35 @@ public class Movement : MonoBehaviour
         Cursor.visible = true;
         _agent = GetComponent<NavMeshAgent>();
         _anim = GetComponent<Animator>();
+        _cam = GameObject.Find("Camera");
     }
 
     void FixedUpdate()
     {
-        _cam = GameObject.Find("Camera");
-
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        if (h != 0)
+        if (_agent.isOnNavMesh)
         {
-            _agent.Move(_cam.transform.right * Time.deltaTime * Speed * h);
-            if (!_audio.isPlaying)
+            if (h != 0)
             {
-                _audio.Play();
+                _agent.Move(_cam.transform.right * Time.deltaTime * Speed * h);
+                if (!_audio.isPlaying)
+                {
+                    _audio.Play();
+                }
+                transform.forward = _cam.transform.TransformDirection(new Vector3(h, 0f, v));
             }
-            transform.forward = _cam.transform.TransformDirection(new Vector3(h, 0f, v));
-        }
 
-        if (v != 0)
-        {
-            _agent.Move(_cam.transform.forward * Time.deltaTime * Speed * v);
-            if (!_audio.isPlaying)
+            if (v != 0)
             {
-                _audio.Play();
+                _agent.Move(_cam.transform.forward * Time.deltaTime * Speed * v);
+                if (!_audio.isPlaying)
+                {
+                    _audio.Play();
+                }
+                transform.forward = _cam.transform.TransformDirection(new Vector3(h, 0f, v));
             }
-            transform.forward = _cam.transform.TransformDirection(new Vector3(h, 0f, v));
         }
 
         /*  if (Input.GetButton("Interact"))
@@ -63,5 +65,11 @@ public class Movement : MonoBehaviour
         }
             _anim.SetBool("IsWalking", walking);
             _anim.SetBool("IsSneaking", sneaking);
+    }
+
+    //called by ScreenChange
+    public void SetCam(GameObject cam)
+    {
+        _cam = cam;
     }
 }

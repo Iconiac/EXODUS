@@ -3,8 +3,7 @@ using System.Collections;
 
 public class SisterMovement : MonoBehaviour 
 {
-	public NavMeshAgent agent { get; private set; }
-
+    private NavMeshAgent _agent;
     private Animator _anim;
     private AudioSource _audio;
 
@@ -15,9 +14,9 @@ public class SisterMovement : MonoBehaviour
 	private void Start()
 	{
         _audio = GetComponent<AudioSource>();
-		agent = GetComponentInChildren<NavMeshAgent>();
-		agent.updateRotation = true;
-		agent.updatePosition = true;
+		_agent = GetComponentInChildren<NavMeshAgent>();
+		_agent.updateRotation = true;
+		_agent.updatePosition = true;
         _anim = GetComponent<Animator>();
 	}
 
@@ -30,13 +29,14 @@ public class SisterMovement : MonoBehaviour
 			
 			if (Physics.Raycast(ray, out hit, Mathf.Infinity))
 			{
-				agent.destination = hit.point;
+				_agent.destination = hit.point;
 			}
         }
 
-        if (agent.remainingDistance >= agent.stoppingDistance)
+        if (_agent.remainingDistance >= _agent.stoppingDistance)
         {
             Walking = true;
+            _agent.updatePosition = true;
 
             if (!_audio.isPlaying)
             {
@@ -44,9 +44,10 @@ public class SisterMovement : MonoBehaviour
             }
         }
 
-        if (agent.remainingDistance <= agent.stoppingDistance)
+        if (_agent.remainingDistance <= _agent.stoppingDistance)
         {
             Walking = false;
+            _agent.updatePosition = false;
         }
 
         _anim.SetBool("IsWalking", Walking);

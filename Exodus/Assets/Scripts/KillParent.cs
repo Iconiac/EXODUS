@@ -12,6 +12,12 @@ void OnTriggerEnter (Collider col)
 		{
 			Explosion.SetActive(true);
 			Destroy(col.gameObject);
+			Invoke ("LoadMountain", 7f);
 		}
+	}
+
+	void LoadMountain()
+	{
+		Application.LoadLevel("Mountain_Scene");
 	}
 }

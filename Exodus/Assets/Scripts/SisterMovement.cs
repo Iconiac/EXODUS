@@ -7,10 +7,10 @@ public class SisterMovement : MonoBehaviour
 
     private Animator _anim;
     private AudioSource _audio;
+
     public bool Walking;
       
 
-//       Animator anim;
 
 	private void Start()
 	{
@@ -32,12 +32,12 @@ public class SisterMovement : MonoBehaviour
 			{
 				agent.destination = hit.point;
 			}
-
-            //               anim.SetBool("IsWalking", true);
         }
+
         if (agent.remainingDistance >= agent.stoppingDistance)
         {
             Walking = true;
+
             if (!_audio.isPlaying)
             {
                 _audio.Play();
@@ -48,6 +48,7 @@ public class SisterMovement : MonoBehaviour
         {
             Walking = false;
         }
+
         _anim.SetBool("IsWalking", Walking);
 
     }

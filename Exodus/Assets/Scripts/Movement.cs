@@ -16,12 +16,11 @@ public class Movement : MonoBehaviour
         Cursor.visible = true;
         _agent = GetComponent<NavMeshAgent>();
         _anim = GetComponent<Animator>();
+        _cam = GameObject.Find("Camera");
     }
 
     void FixedUpdate()
     {
-        _cam = GameObject.Find("Camera");
-
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
@@ -63,5 +62,11 @@ public class Movement : MonoBehaviour
         }
             _anim.SetBool("IsWalking", walking);
             _anim.SetBool("IsSneaking", sneaking);
+    }
+
+    //called by ScreenChange
+    public void SetCam(GameObject cam)
+    {
+        _cam = cam;
     }
 }

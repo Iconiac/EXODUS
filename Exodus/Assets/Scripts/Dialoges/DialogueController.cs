@@ -8,6 +8,7 @@ public class DialogueController : MonoBehaviour
 	[SerializeField] string QuestEnding;
     [SerializeField] Text _displayQuest;
 	[SerializeField] AudioSource BeginningSound;
+	[SerializeField] AudioSource DuringSound;
 	[SerializeField] AudioSource EndSound;
 
     public string DuringQuest;
@@ -25,7 +26,7 @@ public class DialogueController : MonoBehaviour
 			if(GetComponent<QuestController>().QuestActive == true && GetComponent<QuestController>().QuestCompleted == false)
 			{
 				_displayQuest.text = "" + DuringQuest;
-			BeginningSound.Play();
+			DuringSound.Play();
 			}
 			if (GetComponent<QuestController>().QuestCompleted == true)
 			{

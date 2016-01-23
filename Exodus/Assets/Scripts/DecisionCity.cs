@@ -5,9 +5,9 @@ using System.Collections;
 public class DecisionCity : MonoBehaviour 
 {
 
-	void OnCollisionEnter (Collision col)
+	void OnTriggerEnter (Collider col)
 	{
-		if (col.gameObject.name == "Screen1Border")
+		if (col.gameObject.name == "Screen1Border_Children")
 		{
 			if (col.gameObject.tag == "MomWay")
 			{

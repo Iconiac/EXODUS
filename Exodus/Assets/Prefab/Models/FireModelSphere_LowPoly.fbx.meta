@@ -1,17 +1,29 @@
 fileFormatVersion: 2
-guid: 0ef0250e25a701546b18d81f105115b3
-timeCreated: 1450101700
-licenseType: Free
+guid: 04bd492e0e5d35a48a3f6c6ac3f3eba6
+timeCreated: 1430616322
+licenseType: Store
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: polymsh
-    400000: //RootNode
-    400002: polymsh
-    2300000: polymsh
-    3300000: polymsh
-    4300000: polymsh
+    100000: BackLight
+    100002: CameraPreset
+    100004: FillLight
+    100006: //RootNode
+    100008: KeyLight
+    100010: LightPreset
+    100012: Sphere
+    100014: TurnTableCamera
+    400000: BackLight
+    400002: CameraPreset
+    400004: FillLight
+    400006: //RootNode
+    400008: KeyLight
+    400010: LightPreset
+    400012: Sphere
+    400014: TurnTableCamera
+    2300000: Sphere
+    3300000: Sphere
+    4300000: Sphere
   materials:
     importMaterials: 1
     materialName: 0
@@ -21,10 +33,6 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
-    animationImportWarnings: 
-    animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -68,10 +76,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
-  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

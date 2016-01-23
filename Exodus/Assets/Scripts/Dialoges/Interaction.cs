@@ -15,11 +15,13 @@ public class Interaction : MonoBehaviour
 
     private GameObject _player;
     private GameObject _sister;
+	private SphereCollider _collider;
 
     void Start()
     {
         _player = GameObject.Find("Player");
         _sister = GameObject.Find("LilSister");
+		_collider = GetComponent<SphereCollider>();
     }
 
     void OnTriggerEnter (Collider col)
@@ -38,6 +40,7 @@ public class Interaction : MonoBehaviour
                     GarageLight.SetActive(false);
                     FenceLight.SetActive(true);
                     FenceTrigger.SetActive(true);
+					_collider.enabled = false;
                 }
 				StartCoroutine("Questing");
 				Invoke("DisablePanel", Interval);

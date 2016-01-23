@@ -7,6 +7,7 @@ using System.Collections;
 		[SerializeField] float killDistance;
         [SerializeField] AudioSource GunShot;
         [SerializeField] AudioSource Fence;
+		[SerializeField] GameObject CarExplosion;
 
 		private GameObject _parent;
 
@@ -24,6 +25,7 @@ using System.Collections;
 			{
 			if (Vector3.Distance(_parent.transform.position, transform.position) <= killDistance)
 			{
+				CarExplosion.SetActive(true);
                 GunShot.Play();
 				Destroy(_parent);
 			}
